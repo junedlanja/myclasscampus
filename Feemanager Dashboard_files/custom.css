@@ -1,0 +1,312 @@
+@CHARSET "ISO-8859-1";
+span.multiselect-selected-text {
+    text-align: left;
+    float: left;
+}
+b.caret {
+    float: right;
+    margin-top: 8px;
+}
+button.multiselect.dropdown-toggle.btn.btn-default {
+    width: 100% !important;
+    float: left !important;
+}
+.multiselect-container.dropdown-menu {
+    width: 100%;
+    float: left;
+}
+.error {
+    color: #cc5965;
+}
+.modalLoader
+{
+    position: fixed;
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: Black;
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+    -moz-opacity: 0.8;
+}
+.centerLoader
+{
+    z-index: 1000;
+    margin: 300px auto;
+    padding: 10px;
+    width: 130px;
+    filter: alpha(opacity=100);
+    opacity: 1;
+    -moz-opacity: 1;
+}
+.centerLoader img
+{
+    height: 128px;
+    width: 128px;
+}
+.modalLoader img {
+    /*width: 100px;
+    height: 100px;*/
+    left: 50%;
+    position: absolute;
+    margin-left: -50px;
+    top: 50%;
+    margin-top: -50px;
+}
+.redBigIcon > i{
+    color:#F44336;
+    font-size: 40px;
+}
+#serviceIconForm .checkbox { padding-left: 20px; }
+
+/* @media query custom 03_06_2019 */
+
+@media (min-width:1200px) {
+  .modal-xl{
+    width:1140px;
+    max-width:1140px;
+  }
+}
+
+
+/* 22-08-2018 @apurv developer css */
+
+.custom-result-template-form .template-image-block{
+  position: relative;
+  margin: 1rem 0 0 0;
+  display: inline-block;
+}
+.custom-result-template-form .template-image-block .delete-fa-btn{
+  position: absolute;
+  margin: auto;
+  right: -5px;
+  font-size: 20px;
+  color: #ff7800;
+  top: -5px;
+  cursor: pointer;
+}
+.col-md-6.indicator_sub_block.clearfix {
+    clear: left;
+}
+
+form.resultTemplateTitleFrm {
+    padding-right: 20px;
+    border-right: 1px solid #eef1f5;
+}
+
+.portlet.light.bordered .custom-portlet-title {
+  border-bottom: 1px solid #eef1f5;
+  margin-bottom: 10px;
+  min-height: 48px;
+}
+
+.portlet .portlet-title .custome_caption {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 18px;
+  padding: 10px 0;
+}
+.portlet.light .portlet-title .custome_caption {
+  color: #666;
+  padding: 10px 0;
+}
+
+.custom_title_tooltip {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+img.img_common_responsive 
+{
+  width: 100%;
+  height: auto;
+}
+
+a.subgroup-btn-outline {
+  margin-bottom: 5px;
+  display: table;
+}
+a.resultGroupLink .linkbolderText {
+  font-weight: bold;
+}
+.portlet.light .portlet-title .custome_caption {
+  font-size: 16px;
+}
+
+.custome_caption .custom_level_one {
+  color: #3598dc;
+}
+.custome_caption .custom_level_two {
+  color: #ed6b75;
+}
+.custome_caption .custom_level_three {
+  color: #8E44AD;
+}
+
+a.createExtraActivityGroupBtn {
+  margin: 8px 0 0;
+}
+
+/* print setting page css 20_11_2018 */
+
+.form-horizontal .roundingMarksSubBlock .roundingMarksTitle {
+  font-weight: bold;
+  color: #32c5d2;
+  margin-bottom: 2rem;
+}
+
+.roundingMarksSubBlock .form-group {
+  margin-bottom: 0;
+}
+
+.roundingMarksSubBlock .form-group .mt-radio-list {
+  padding-bottom: 0;
+}
+
+.form-horizontal .roundingMarksSubBlock .control-label {
+  text-align: left;
+}
+
+/* print setting page css 27_11_2018 */
+
+.passingMarksSubBlock .form-group {
+  margin-bottom: 0;
+}
+.passingMarksSubBlock .form-group .mt-radio-list {
+  padding-bottom: 0;
+}
+
+/* Inquiry Page css 21_12_2018 */
+
+.inquiry_custom_fields_setting_steps .not_editiable_field {
+  background: #eef1f5;
+}
+
+/* 02_01_2019 */
+
+.full_width_lable, .full_width_button_lable {
+  display: block;
+}
+
+form#frmAdd .full_width_lable {
+  text-align: center;
+}
+
+ul.page_breadcrumb {
+  margin-left: 0;
+  display: block;
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+ul.page_breadcrumb li {
+  display: inline-block;
+}
+
+/* 29_01_2019 */
+
+h5.institute_year_chk_bl {
+    margin-bottom: 2rem;
+}
+
+/* 14_02_2019 */
+
+.subFrmRadioBl {
+    display: inline-block;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.subFrmRadioBl [type="radio"]:not(:checked) + label, .subFrmRadioBl [type="radio"]:checked + label{
+  cursor: pointer;
+}
+
+.subFrmRadioBl .radioOffLabel{
+  cursor: pointer;
+}
+
+.inquiry_form_portlet_bl .form_container_bl .formgroup_clear_bl:nth-child(3n+1){
+  clear: left;
+}
+
+/*
+.inquiry_form_portlet_bl .form_container_bl.edu_qualification_bl .form-group:nth-child(3n+1) {
+  clear: unset;
+}*/
+
+/* 19_02_2019 */
+
+.print_setting_hr
+{
+  display: inline-block;
+  width: 100%;
+}
+
+.portlet>.portlet-title>.caption>i.custom_fa {
+  float: unset;
+  margin-left: 5px;
+}
+small.custom_temp_title {
+    font-weight: normal;
+    color: #3598dc;
+    font-size: 14px;
+}
+
+.common_indi_extra_dd .common_dd_handle{
+  height: auto;
+} 
+
+
+table#result_table thead.cst_combine_thead tr th {
+    font-weight: bold;
+}
+.form-horizontal .commonPortletSubBl .commonPortletTitle {
+  font-weight: bold;
+  color: #32c5d2;
+  margin-bottom: 2rem;
+}
+
+#companyPaymentSetting .companySetBl {
+    padding: 2rem;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+.common_filter_bl .collapsible{
+  cursor: pointer !important;
+}
+
+.custom_search_fields_main_bl .cst_search_container_bl {
+  padding-top: 18px;
+  padding-bottom: 8px;
+}
+
+.custom_search_fields_main_bl .custom_search_fields_sub_bl {
+  margin-bottom: 10px;
+}
+
+/* .custom_search_fields_main_bl .custom_search_fields_sub_bl:nth-child(4n+1) { */
+.custom_search_fields_main_bl .cst_search_fields_container_bl .custom_search_fields_sub_bl:nth-child(4n+1){
+  clear: left;
+}
+
+.cst_filter_header_title {
+  padding: 8px 0 8px;
+}
+
+.cst_filter_header_title .cst_collaps_icon{
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.field_sequence_setting_sub_bl .dd-handle {
+  height: auto;
+}
+
+.cst_profile_header div.cst_fees_setup_alert {
+  font-size: 13px;
+  color: #333;
+  text-transform: none;
+}

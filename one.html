@@ -1,0 +1,301 @@
+
+        <div class="portlet light bordered">
+           <div class="portlet-title">
+              <div class="caption font-dark">
+                 <strong>Latest Transactions</strong>
+              </div>
+              <div class="col-md-12" style="position: absolute; z-index: 111; margin-left: -15px;">
+                 <form action="https://myclasscampus.com/feemanager/payment/excelexport" method="post" id="frm_fee_payment_report" style="float: right;">
+                    <input type="hidden" name="_token" value="vzlOieITpigdWvPkMXZcBLQLkGMol6PH37xz6ep0">
+                    <div class="col-md-6">
+                       <input type="text" name="fee_date" id="fee_date" class="form-control datepicker search_input" placeholder="Select Date" value="" autocomplete="off">
+                       <input type="hidden" name="receipt_no" id="excel_receipt_no">
+                       <input type="hidden" name="receipt_date" id="excel_receipt_date">
+                       <input type="hidden" name="student_name" id="excel_student_name">
+                       <input type="hidden" name="receipt_amount" id="excel_receipt_amount">
+                       <input type="hidden" name="receipt_mode" id="excel_receipt_mode">
+                       <input type="hidden" name="cheque_no" id="excel_cheque_no">
+                       <input type="hidden" name="cheque_date" id="excel_cheque_date">
+                       <input type="hidden" name="bank_name" id="excel_bank_name">
+                       <input type="hidden" name="collector_name" id="excel_collector_name">
+                       <input type="hidden" name="custom_receipt_no" id="excel_custom_receipt_no">
+                    </div>
+                    <div class="col-md-2">
+                       <input type="submit" class="btn btn-primary btn_get_report" name="button" value="Export To Excel">
+                    </div>
+                 </form>
+                 <div class="clearfix"></div>
+              </div>
+           </div>
+           <div class="portlet-body">
+              <div id="dataTable_wrapper" class="dataTables_wrapper">
+                 <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                       <div class="dataTables_length" id="dataTable_length">
+                          <label>
+                             <select name="dataTable_length" aria-controls="dataTable" class="form-control input-sm input-xsmall input-inline">
+                                <option value="10">10</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                             </select>
+                             records 
+                          </label>
+                       </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                       <div id="dataTable_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control input-sm input-small input-inline" placeholder="" aria-controls="dataTable"></label></div>
+                    </div>
+                    <div id="dataTable_processing" class="dataTables_processing" style="display: none;">Processing...</div>
+                 </div>
+                 <div class="table-scrollable">
+                    <table class="table table-striped table-bordered table-hover dataTable" id="dataTable" role="grid" aria-describedby="dataTable_info" style="width: 1180px;">
+                       <thead>
+                          <tr role="row">
+                             <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 59px;" aria-label="Action: activate to sort column ascending">Action</th>
+                             <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 110px;" aria-label="Receipt No: activate to sort column ascending">Receipt No</th>
+                             <th class="sorting_desc" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 35px;" aria-sort="descending" aria-label="Date: activate to sort column ascending">Date</th>
+                             <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 59px;" aria-label="Student Name: activate to sort column ascending">Student Name</th>
+                             <th class="text sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 61px;" aria-label="Amount: activate to sort column ascending">Amount</th>
+                             <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 42px;" aria-label="Mode: activate to sort column ascending">Mode</th>
+                             <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 57px;" aria-label="Cheque No: activate to sort column ascending">Cheque No</th>
+                             <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 57px;" aria-label="Cheque Date: activate to sort column ascending">Cheque Date</th>
+                             <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 39px;" aria-label="Bank: activate to sort column ascending">Bank</th>
+                             <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 66px;" aria-label="Collector Name: activate to sort column ascending">Collector Name</th>
+                             <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 57px;" aria-label="Custom Receipt No.: activate to sort column ascending">Custom Receipt No.</th>
+                          </tr>
+                       </thead>
+                       <tfoot class="footerSearch" style="display:  table-row-group;">
+                          <tr>
+                             <th rowspan="1" colspan="1">
+                                <button type="button" class="btn btn-sm red btn-outline filter-cancel btn_reset_filter" id="clearInputFilter"><i class="fa fa-times"></i>
+                                Clear                                                    </button>
+                             </th>
+                             <th rowspan="1" colspan="1"><input type="text" class="form-control search_input" placeholder="Search" id="receipt_no"></th>
+                             <th rowspan="1" colspan="1"><input type="text" class="form-control search_input datepicker" placeholder="Search" id="receipt_date"></th>
+                             <th rowspan="1" colspan="1"><input type="text" class="form-control search_input" placeholder="Search" id="student_name"></th>
+                             <th class="text" rowspan="1" colspan="1"><input type="text" class="form-control search_input" placeholder="Search" id="receipt_amount"></th>
+                             <th rowspan="1" colspan="1">
+                                <select class="form-control search_input" id="receipt_mode">
+                                   <option value="">-Select-</option>
+                                   <option value="0">Cash</option>
+                                   <option value="1">Cheque</option>
+                                   <option value="2">Online</option>
+                                   <option value="3">Mobile Wallets</option>
+                                   <option value="4">DD</option>
+                                   <option value="6">Others</option>
+                                   <option value="1001">Wallet</option>
+                                </select>
+                             </th>
+                             <th rowspan="1" colspan="1"><input type="text" class="form-control search_input" placeholder="Search" id="cheque_no"></th>
+                             <th rowspan="1" colspan="1"><input type="text" class="form-control search_input datepicker" placeholder="Search" id="cheque_date"></th>
+                             <th rowspan="1" colspan="1"><input type="text" class="form-control search_input" placeholder="Search" id="bank_name"></th>
+                             <th rowspan="1" colspan="1"><input type="text" class="form-control search_input" placeholder="Search" id="collector_name"></th>
+                             <th rowspan="1" colspan="1"><input type="text" class="form-control search_input" placeholder="Search" id="custom_receipt_no"></th>
+                          </tr>
+                       </tfoot>
+                       <tbody>
+                          <tr role="row" class="odd">
+                             <td>
+                                <ul class="list-inline" style="display: inline-flex;">
+                                   <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/edit/241071" class="btn btn-primary btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Edit" data-original-title="" title=""><i class="fa fa-pencil"></i></a></li>
+                                   <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/receipt/241071" class="btn btn-info btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Print" data-original-title="" title=""><i class="fa fa-print"></i></a></li>
+                                </ul>
+                             </td>
+                             <td>2018 - 2019/1521/2624/best edu/70</td>
+                             <td class="sorting_1">2019-06-30</td>
+                             <td>Indrajit</td>
+                             <td class=" text">8000.00</td>
+                             <td>Cash</td>
+                             <td></td>
+                             <td></td>
+                             <td></td>
+                             <td>Mr. Gupta</td>
+                             <td></td>
+                          </tr>
+                          <tr role="row" class="even">
+                             <td>
+                                <ul class="list-inline" style="display: inline-flex;">
+                                   <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/edit/241072" class="btn btn-primary btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Edit" data-original-title="" title=""><i class="fa fa-pencil"></i></a></li>
+                                   <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/receipt/241072" class="btn btn-info btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Print" data-original-title="" title=""><i class="fa fa-print"></i></a></li>
+                                </ul>
+                             </td>
+                             <td>2018 - 2019/1521/2624/best/57</td>
+                             <td class="sorting_1">2019-06-30</td>
+                             <td>Indrajit</td>
+                             <td class=" text">2000.00</td>
+                             <td>Cash</td>
+                             <td></td>
+                             <td></td>
+                             <td></td>
+                             <td>Mr. Gupta</td>
+                             <td></td>
+                          </tr>
+                          <tr role="row" class="odd">
+                             <td>
+                                <ul class="list-inline" style="display: inline-flex;">
+                                   <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/edit/241076" class="btn btn-primary btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Edit" data-original-title="" title=""><i class="fa fa-pencil"></i></a></li>
+                                   <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/receipt/241076" class="btn btn-info btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Print" data-original-title="" title=""><i class="fa fa-print"></i></a></li>
+                                </ul>
+                             </td>
+                             <td>2018 - 2019/1521/2624/best edu/71</td>
+                             <td class="sorting_1">2019-06-30</td>
+                             <td>Jayesh</td>
+                             <td class=" text">8000.00</td>
+                             <td>Cash</td>
+                             <td></td>
+                             <td></td>
+                             <td></td>
+                             <td>Mr. Gupta</td>
+                             <td></td>
+                          </tr>
+                          <tr role="row" class="even">
+                             <td>
+                                <ul class="list-inline" style="display: inline-flex;">
+                                   <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/edit/241077" class="btn btn-primary btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Edit" data-original-title="" title=""><i class="fa fa-pencil"></i></a></li>
+                                   <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/receipt/241077" class="btn btn-info btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Print" data-original-title="" title=""><i class="fa fa-print"></i></a></li>
+                                </ul>
+                             </td>
+                             <td>2018 - 2019/1521/2624/best/58</td>
+                             <td class="sorting_1">2019-06-30</td>
+                             <td>Jayesh</td>
+                             <td class=" text">2000.00</td>
+                             <td>Cash</td>
+                             <td></td>
+                             <td></td>
+                             <td></td>
+                             <td>Mr. Gupta</td>
+                             <td></td>
+                          </tr>
+                          <tr role="row" class="odd">
+                             <td>
+                                <ul class="list-inline" style="display: inline-flex;">
+                                   <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/edit/239679" class="btn btn-primary btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Edit" data-original-title="" title=""><i class="fa fa-pencil"></i></a></li>
+                                   <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/receipt/239679" class="btn btn-info btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Print" data-original-title="" title=""><i class="fa fa-print"></i></a></li>
+                                </ul>
+                             </td>
+                             <td>2018 - 2019/1521/2624/best edu/69</td>
+                             <td class="sorting_1">2019-06-29</td>
+                             <td>Divyansh</td>
+                             <td class=" text">8000.00</td>
+                             <td>Cash</td>
+                             <td></td>
+                             <td></td>
+                             <td></td>
+                             <td>Mr. Gupta</td>
+                             <td></td>
+                          </tr>
+                          <tr role="row" class="even">
+                             <td>
+                                <ul class="list-inline" style="display: inline-flex;">
+                                   <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/edit/239680" class="btn btn-primary btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Edit" data-original-title="" title=""><i class="fa fa-pencil"></i></a></li>
+                                   <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/receipt/239680" class="btn btn-info btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Print" data-original-title="" title=""><i class="fa fa-print"></i></a></li>
+                                </ul>
+                             </td>
+                             <td>2018 - 2019/1521/2624/best/56</td>
+                             <td class="sorting_1">2019-06-29</td>
+                             <td>Divyansh</td>
+                             <td class=" text">2000.00</td>
+                             <td>Cash</td>
+                             <td></td>
+                             <td></td>
+                             <td></td>
+                             <td>Mr. Gupta</td>
+                             <td></td>
+                          </tr>
+                          <tr role="row" class="odd">
+                             <td>
+                                <ul class="list-inline" style="display: inline-flex;">
+                                   <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/edit/237601" class="btn btn-primary btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Edit" data-original-title="" title=""><i class="fa fa-pencil"></i></a></li>
+                                   <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/receipt/237601" class="btn btn-info btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Print" data-original-title="" title=""><i class="fa fa-print"></i></a></li>
+                                </ul>
+                             </td>
+                             <td>2018 - 2019/1521/2624/best edu/66</td>
+                             <td class="sorting_1">2019-06-27</td>
+                             <td>Raj Malhotra</td>
+                             <td class=" text">8000.00</td>
+                             <td>Cash</td>
+                             <td></td>
+                             <td></td>
+                             <td></td>
+                             <td>Mr. Gupta</td>
+                             <td></td>
+                          </tr>
+                          <tr role="row" class="even">
+                             <td>
+                                <ul class="list-inline" style="display: inline-flex;">
+                                   <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/edit/237602" class="btn btn-primary btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Edit" data-original-title="" title=""><i class="fa fa-pencil"></i></a></li>
+                                   <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/receipt/237602" class="btn btn-info btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Print" data-original-title="" title=""><i class="fa fa-print"></i></a></li>
+                                </ul>
+                             </td>
+                             <td>2018 - 2019/1521/2624/best/54</td>
+                             <td class="sorting_1">2019-06-27</td>
+                             <td>Raj Malhotra</td>
+                             <td class=" text">1334.00</td>
+                             <td>Cash</td>
+                             <td></td>
+                             <td></td>
+                             <td></td>
+                             <td>Mr. Gupta</td>
+                             <td></td>
+                          </tr>
+                          <tr role="row" class="odd">
+                             <td>
+                                <ul class="list-inline" style="display: inline-flex;">
+                                   <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/edit/237606" class="btn btn-primary btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Edit" data-original-title="" title=""><i class="fa fa-pencil"></i></a></li>
+                                   <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/receipt/237606" class="btn btn-info btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Print" data-original-title="" title=""><i class="fa fa-print"></i></a></li>
+                                </ul>
+                             </td>
+                             <td>2018 - 2019/1521/2624/best edu/67</td>
+                             <td class="sorting_1">2019-06-27</td>
+                             <td>Jayesh</td>
+                             <td class=" text">7800.00</td>
+                             <td>Cash</td>
+                             <td></td>
+                             <td></td>
+                             <td></td>
+                             <td>Mr. Gupta</td>
+                             <td></td>
+                          </tr>
+                          <tr role="row" class="even">
+                             <td>
+                                <ul class="list-inline" style="display: inline-flex;">
+                                   <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/edit/237607" class="btn btn-primary btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Edit" data-original-title="" title=""><i class="fa fa-pencil"></i></a></li>
+                                   <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/receipt/237607" class="btn btn-info btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Print" data-original-title="" title=""><i class="fa fa-print"></i></a></li>
+                                </ul>
+                             </td>
+                             <td>2018 - 2019/1521/2624/best/55</td>
+                             <td class="sorting_1">2019-06-27</td>
+                             <td>Jayesh</td>
+                             <td class=" text">2000.00</td>
+                             <td>Cash</td>
+                             <td></td>
+                             <td></td>
+                             <td></td>
+                             <td>Mr. Gupta</td>
+                             <td></td>
+                          </tr>
+                       </tbody>
+                    </table>
+                 </div>
+                 <div class="row">
+                    <div class="col-md-5 col-sm-5">
+                       <div class="dataTables_info" id="dataTable_info" role="status" aria-live="polite">Showing 1 to 10 of 113 entries</div>
+                    </div>
+                    <div class="col-md-7 col-sm-7">
+                       <div class="dataTables_paginate paging_bootstrap_number" id="dataTable_paginate">
+                          <ul class="pagination" style="visibility: visible;">
+                             <li class="prev disabled"><a href="https://myclasscampus.com/d/feemanager#" title="Prev"><i class="fa fa-angle-left"></i></a></li>
+                             <li class="active"><a href="https://myclasscampus.com/d/feemanager#">1</a></li>
+                             <li><a href="https://myclasscampus.com/d/feemanager#">2</a></li>
+                             <li><a href="https://myclasscampus.com/d/feemanager#">3</a></li>
+                             <li><a href="https://myclasscampus.com/d/feemanager#">4</a></li>
+                             <li><a href="https://myclasscampus.com/d/feemanager#">5</a></li>
+                             <li class="next"><a href="https://myclasscampus.com/d/feemanager#" title="Next"><i class="fa fa-angle-right"></i></a></li>
+                          </ul>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     

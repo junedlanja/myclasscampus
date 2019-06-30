@@ -1,0 +1,17 @@
+/* 03-01-2019 @ global css changes start*/
+
+*, body, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* css end */
+
+/* 05-02-2019 @ field sequence setting start */
+
+	.stepwise_field_setup .portlet-title .sec_full_width_title
+	{
+		width: 100%;
+    	text-align: center;
+	}
+
+/* 05-02-2019 @ field sequence setting end */

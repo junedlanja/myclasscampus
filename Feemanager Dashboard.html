@@ -1,0 +1,2639 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)https://myclasscampus.com/d/feemanager -->
+<html lang="en">
+   <!--<![endif]--><!-- BEGIN HEAD -->
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Feemanager Dashboard</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta content="width=device-width, initial-scale=1" name="viewport">
+      <meta name="robots" content="noindex, nofollow">
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
+      <!-- BEGIN GLOBAL MANDATORY STYLES -->
+      <link href="./Feemanager Dashboard_files/css" rel="stylesheet" type="text/css">
+      <link href="./Feemanager Dashboard_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link href="./Feemanager Dashboard_files/simple-line-icons.min.css" rel="stylesheet" type="text/css">
+      <link href="./Feemanager Dashboard_files/bootstrap.min.css" rel="stylesheet" type="text/css">
+      <link href="./Feemanager Dashboard_files/bootstrap-switch.min.css" rel="stylesheet" type="text/css">
+      <link href="./Feemanager Dashboard_files/jquery.nestable.css" rel="stylesheet" type="text/css">
+      <link href="./Feemanager Dashboard_files/fullcalendar.css" rel="stylesheet" type="text/css">
+      <!-- END GLOBAL MANDATORY STYLES -->
+      <!-- BEGIN THEME GLOBAL STYLES -->
+      <link href="./Feemanager Dashboard_files/components-rounded.min.css" rel="stylesheet" id="style_components" type="text/css">
+      <link href="./Feemanager Dashboard_files/plugins.min.css" rel="stylesheet" type="text/css">
+      <!-- END THEME GLOBAL STYLES -->
+      <!-- BEGIN THEME LAYOUT STYLES -->
+      <link href="./Feemanager Dashboard_files/layout.min.css" rel="stylesheet" type="text/css">
+      <link href="./Feemanager Dashboard_files/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color">
+      <!-- END THEME LAYOUT STYLES -->
+      <!-- BEGIN PAGE LEVEL PLUGINS -->
+      <link href="./Feemanager Dashboard_files/colorpicker.css" rel="stylesheet" type="text/css">
+      <link href="./Feemanager Dashboard_files/jquery.minicolors.css" rel="stylesheet" type="text/css">
+      <!-- END PAGE LEVEL PLUGINS -->
+      <!-- BEGIN PAGE LEVEL STYLES -->
+      <link href="./Feemanager Dashboard_files/datatables.min.css" rel="stylesheet" type="text/css">
+      <link href="./Feemanager Dashboard_files/datatables.bootstrap.css" rel="stylesheet" type="text/css">
+      <link href="./Feemanager Dashboard_files/select2.min.css" rel="stylesheet" type="text/css">
+      <link href="./Feemanager Dashboard_files/select2-bootstrap.min.css" rel="stylesheet" type="text/css">
+      <link href="./Feemanager Dashboard_files/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css">
+      <link href="./Feemanager Dashboard_files/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
+      <link href="./Feemanager Dashboard_files/bootstrap-multiselect.css" rel="stylesheet" type="text/css">
+      <link href="./Feemanager Dashboard_files/multi-select.css" rel="stylesheet" type="text/css">
+      <link href="./Feemanager Dashboard_files/fullcalendar.min.css" rel="stylesheet" type="text/css">
+      <link href="./Feemanager Dashboard_files/sweetalert.css" rel="stylesheet" type="text/css">
+      <link href="./Feemanager Dashboard_files/bootstrap-fileinput.css" rel="stylesheet" type="text/css">
+      <link href="./Feemanager Dashboard_files/all.css" rel="stylesheet" type="text/css">
+      <link href="./Feemanager Dashboard_files/custom.css" rel="stylesheet" type="text/css">
+      <link href="./Feemanager Dashboard_files/toastr.min.css" rel="stylesheet" type="text/css">
+      <link href="./Feemanager Dashboard_files/profile.min.css" rel="stylesheet" type="text/css">
+      <link href="./Feemanager Dashboard_files/buttons.dataTables.min.css" rel="stylesheet" type="text/css">
+      <link type="text/css" href="./Feemanager Dashboard_files/HoldOn.css" rel="stylesheet">
+      <!-- END PAGE LEVEL STYLES -->
+      <link href="./Feemanager Dashboard_files/css(1)" rel="stylesheet">
+      <link href="./Feemanager Dashboard_files/css(2)" rel="stylesheet">
+      <link href="./Feemanager Dashboard_files/css(3)" rel="stylesheet">
+      <link href="./custom.css" rel="stylesheet">
+      <style>
+         @-webkit-keyframes spaceboots {
+         0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+         10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+         20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+         30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+         40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+         50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+         60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+         70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+         80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+         90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+         100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+         }
+         .shake {
+         -webkit-animation-name: spaceboots;
+         -webkit-animation-duration: 0.8s;
+         -webkit-transform-origin:50% 50%;
+         -webkit-animation-iteration-count: 5;
+         -webkit-animation-timing-function: linear;
+         }
+         body, h1, h2, h3, h4, h5, h6 {
+         font-family: 'ABeeZee';
+         }
+         .page-header.navbar .top-menu .navbar-nav>li.dropdown-user .dropdown-menu>li>a {
+         font-family: 'ABeeZee';
+         font-weight: normal;
+         }
+         .amcharts-chart-div a,
+         #dataTable thead tr th:first-child::after {
+         display: none !important;
+         }
+         .page-sidebar-menu .nav-item a,
+         .page-sidebar-menu .nav-item i {
+         font-weight: normal !important;
+         color: #FFF !important;
+         }
+         h4 {
+         font-weight: bold;
+         }
+         .portlet-title .caption {
+         font-weight: bold;
+         }
+         .row-eq-height {
+         display: -webkit-box;
+         display: -webkit-flex;
+         display: -ms-flexbox;
+         display: flex;
+         }
+         .multiselect-container li .checkbox {
+         padding: 7px 40px 5px 35px;
+         }
+         .big-checkbox {
+         width: 17px;
+         height: 17px;
+         vertical-align: text-bottom;
+         }
+         #gridBox {
+         position: absolute;
+         background-color: #fff;
+         border: 1px solid #ddd;
+         border-radius: 4px;
+         margin-top: 2px;
+         margin-left: 8px;
+         width: 590px;
+         max-height: 500px;
+         overflow: auto;
+         box-shadow: 5px 5px rgba(102,102,102,.1);
+         }
+         #gridBox ul {
+         list-style: none;
+         padding: 10px;
+         }
+         #gridBox ul li {
+         float: left;
+         }
+         #gridBox ul li a {
+         display: block;
+         background-color: #fafafa;
+         text-decoration: none;
+         width: 100px;
+         height: 100px;
+         border: 1px solid #eee;
+         border-radius: 5px;
+         margin: 5px;
+         color: #444;
+         text-align: center;
+         font-weight: bold;
+         padding: 2px;
+         }
+         #gridBox ul li a div {
+         font-weight: bold;
+         }
+         #gridBox ul li a i {
+         display: inline-block;
+         font-size: 22px;
+         margin-top: 20px;
+         margin-bottom: 10px;
+         }
+         .quick_action, .quick_action:hover{
+         color:white;
+         text-decoration:none;
+         font-size:16px;
+         font-family: 'ABeeZee';
+         }
+         #gridBox ul li a:hover {
+         background-color: #f5f5f5;
+         }
+         @font-face {
+         font-family: "teraFont-akash";
+         src: url('https://myclasscampus.com/fonts/TeraFont-Akash.ttf');
+         }
+         @font-face {
+         font-family: "latest-trilonormal";
+         src: url('https://myclasscampus.com/fonts/TRILO1.TTF');
+         }
+         @font-face {
+         font-family: "gopika-two";
+         src: url('https://myclasscampus.com/fonts/Gopika.ttf');
+         }
+         @font-face {
+         font-family: "shruti";
+         src: url('https://myclasscampus.com/fonts/shruti.ttf');
+         }
+         @font-face {
+         font-family: "gujrati-ekal";
+         src: url('https://myclasscampus.com/fonts/EKLG-13B.OTF');
+         }
+         @font-face {
+         font-family: "kap";
+         src: url('https://myclasscampus.com/fonts/KAP111.TTF');
+         }
+         /* New added font-face start */
+         @font-face {
+         font-family: "Xefus";
+         src: url('https://myclasscampus.com/fonts/Xefus.ttf');
+         }
+         @font-face {
+         font-family: "CircularStd_Medium";
+         src: url('https://myclasscampus.com/fonts/CircularStd_Medium.otf');
+         }
+         @font-face {
+         font-family: "segoesc";
+         src: url('https://myclasscampus.com/fonts/segoesc.ttf');
+         }
+         @font-face {
+         font-family: "impact";
+         src: url('https://myclasscampus.com/fonts/impact.ttf');
+         }
+         @font-face {
+         font-family: "FSEX300";
+         src: url('https://myclasscampus.com/fonts/FSEX300.ttf');
+         }
+         @font-face {
+         font-family: "comici";
+         src: url('https://myclasscampus.com/fonts/comici.ttf');
+         }
+         @font-face {
+         font-family: "GreatVibesRegular";
+         src: url('https://myclasscampus.com/fonts/GreatVibes-Regular.otf');
+         }
+         @font-face {
+         font-family: "Chunkfive";
+         src: url('https://myclasscampus.com/fonts/Chunkfive.otf');
+         }
+         @font-face {
+         font-family: "Verdana";
+         src: url('https://myclasscampus.com/fonts/Verdana.ttf');
+         }
+         @font-face {
+         font-family: "ATClassicRoman";
+         src: url('https://myclasscampus.com/fonts/ATClassicRoman.ttf');
+         }
+         @font-face {
+         font-family: "ArialTh";
+         src: url('https://myclasscampus.com/fonts/ArialTh.ttf');
+         }
+         /* New added font-face end */
+         .page-sidebar .page-sidebar-menu>li.active.open>a,
+         .page-sidebar .page-sidebar-menu>li.active>a,
+         .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li.active.open>a,
+         .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li.active>a {
+         background: #2f97d4 !important;
+         border-top-color: transparent;
+         color: #fff;
+         }
+         .multiselect-selected-text{
+         /*display: inline-block;*/
+         max-width: 100%;
+         /*word-break: break-all;*/
+         white-space: normal;
+         overflow: hidden;
+         }
+         .institute_dropdown_menu{
+         max-height: 500px !important;
+         overflow-y: scroll !important;
+         }
+         #gns_viewer .gns_name_select.active td {
+         background-color: #99ddff;
+         }
+         .quick_action:focus {
+         background-color: #2b3643 !important;
+         border-color:#2b3643 !important;
+         }
+      </style>
+      <link rel="shortcut icon" href="https://myclasscampus.com/favicon.ico">
+      <link href="./Feemanager Dashboard_files/global_custom.css" rel="stylesheet" type="text/css">
+      <style>.cke{visibility:hidden;}</style>
+      <style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style>
+   </head>
+   <!-- END HEAD -->
+   <body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white page-sidebar-fixed">
+      <div class="page-wrapper">
+         <!-- BEGIN HEADER -->
+         <div class="page-header navbar navbar-fixed-top">
+            <!-- BEGIN HEADER INNER -->
+            <div class="page-header-inner">
+               <!-- BEGIN LOGO -->
+               <div class="page-logo">
+                  <a href="https://myclasscampus.com/">
+                  <img src="./Feemanager Dashboard_files/721560837316_banner.jpg" class="logo-default" height="35" style="margin: 7px 0">
+                  </a>
+                  <div class="menu-toggler sidebar-toggler">
+                     <span></span>
+                  </div>
+               </div>
+               <!-- END LOGO -->
+               <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+               <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+               <span></span>
+               </a>
+               <!-- END RESPONSIVE MENU TOGGLER -->
+               <!-- BEGIN TOP NAVIGATION MENU -->
+               <div class="top-menu pull-left">
+                  <ul class="nav navbar-nav  top-menu">
+                     <li>
+                        <a href="https://myclasscampus.com/d/feemanager#" class="dropdown-toggle btn blue" data-toggle="dropdown" style="height: -webkit-fill-available;">Institute  &nbsp;<b class="caret"></b></a>
+                        <ul class="dropdown-menu institute_dropdown_menu">
+                           <li class="divider"></li>
+                           <li><a href="javascript:;" data-id="1524" class="confirm-instichange">Digital Mindset Academy
+                              </a>
+                           </li>
+                           <li class="divider"></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <!--/.nav-collapse -->
+            <div class="pull-left">
+               <button class="btn green" id="gridBtn" style="margin-top: 8px;margin-left: 10px;display: none;"><i class="fa fa-navicon"></i></button>
+               <div id="gridBox" style="display: none" class="active">
+                  <ul>
+                     <li>
+                        <a href="https://myclasscampus.com/d/usermanagement">
+                           <i class="fa fa-group"></i>
+                           <div>User Management</div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://myclasscampus.com/institutes">
+                           <i class="fa fa-subscript"></i>
+                           <div>Sub Institutes</div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://myclasscampus.com/d/feemanager#">
+                           <i class="fa fa-calendar-o"></i>
+                           <div>Calendar &amp; Analysis</div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://myclasscampus.com/d/feemanager#">
+                           <i class="fa fa-calendar-plus-o"></i>
+                           <div>Exam Planner &amp; Scheduler</div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://myclasscampus.com/d/feemanager#">
+                           <i class="fa fa-pie-chart"></i>
+                           <div>Analysis &amp; Reports</div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://myclasscampus.com/d/feemanager#">
+                           <i class="fa fa-tasks"></i>
+                           <div>Tests &amp; Papers</div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://myclasscampus.com/d/feemanager#">
+                           <i class="fa fa-upload"></i>
+                           <div>Material Upload</div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://myclasscampus.com/d/settings">
+                           <i class="fa fa-cogs"></i>
+                           <div>Settings</div>
+                        </a>
+                     </li>
+                  </ul>
+                  <div class="clearfix"></div>
+                  <hr style="margin: 9px 0 0 0">
+                  <ul>
+                     <li>
+                        <a href="https://myclasscampus.com/d/feemanager#">
+                           <i class="fa fa-book"></i>
+                           <div>Library</div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://myclasscampus.com/d/feemanager#">
+                           <i class="fa fa-handshake-o"></i>
+                           <div>Human Resource Management</div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://myclasscampus.com/d/feemanager#">
+                           <i class="fa fa-barcode"></i>
+                           <div>Inventory</div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://myclasscampus.com/d/feemanager#">
+                           <i class="fa fa-bus"></i>
+                           <div>Transportation</div>
+                        </a>
+                     </li>
+                     <li class="active">
+                        <a href="https://myclasscampus.com/d/feemanager">
+                           <i class="fa fa-inr"></i>
+                           <div>Fees Management</div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://myclasscampus.com/d/feemanager#">
+                           <i class="fa fa-calendar"></i>
+                           <div>Timetable Management</div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://myclasscampus.com/d/feemanager#">
+                           <i class="fa fa-info"></i>
+                           <div>Inquiry Management</div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://myclasscampus.com/d/feemanager#">
+                           <i class="fa fa-question"></i>
+                           <div>Help Desk Management</div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://myclasscampus.com/d/feemanager#">
+                           <i class="fa fa-exclamation"></i>
+                           <div>Complain Management</div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://myclasscampus.com/d/feemanager#">
+                           <i class="fa fa-credit-card"></i>
+                           <div>Accounts</div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://myclasscampus.com/d/feemanager#">
+                           <i class="fa fa-id-badge"></i>
+                           <div>Attendance Machine</div>
+                        </a>
+                     </li>
+                  </ul>
+                  <div class="clearfix"></div>
+                  <br>
+               </div>
+            </div>
+            <div class="pull-left font-white bold" style="font-size:17px;margin-top:12px;margin-left:5%">Best High School</div>
+            <div class="top-menu">
+               <!-- YEAR + DEPARTMENT SELECTOR -->
+               <div class="nav navbar-nav pull-left" id="" style="margin-top: 12px">
+                  <div class="btn-group" id="quick_action_dropdown">
+                     <a href="javascript:;" class="btn dropdown-toggle quick_action" id="action_button" data-toggle="dropdown">
+                        <!-- <i class="fa fa-external-link-square" style="color:black;"></i> Quick Action -->
+                        <i class="fa fa-external-link" style="color: white; font-size: 32px" data-placement="bottom" aria-hidden="true" data-html="true" data-toggle="tooltip" data-original-title="Quick Action"></i>
+                     </a>
+                     <!-- Ajax content will be loaded here-->
+                  </div>
+               </div>
+               <div class="nav navbar-nav pull-left">
+                  <li class="dropdown dropdown-extended dropdown-notification">
+                     <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" aria-expanded="true">
+                     <i class="fa fa-bell" style="color:#FFF;font-size:24px;"></i>
+                     <span class="badge badge-danger bold" style="top:5px;right:25px;"> 99</span>
+                     </a>
+                     <ul class="dropdown-menu dropdown-menu-left" style="width:400px;max-width:400px !important">
+                        <li class="external">
+                           <h3><span class="bold">99 pending</span> notifications</h3>
+                           <a href="https://myclasscampus.com/access/notifications">view all</a>
+                        </li>
+                        <li>
+                           <ul class="dropdown-menu-list scroller" style="max-height: 250px; overflow: auto; width: auto;" data-handle-color="#637283" data-initialized="1">
+                              <li>
+                                 <a href="javascript:;" style="border-left:5px solid #FFFFFF;border-left-color:#c1d9ff">
+                                    <big class="bold" style="color:#333">
+                                    <i class="fa fa-star" style="font-size:1.2em"></i>
+                                    Exam Scheduler · Result Declared
+                                    </big>
+                                    <hr style="margin:4px">
+                                    <div class="details" style="color:#000">
+                                       Dear Nikunj, result in weekly test Exam is, GUJARATI - Absent |Percent: N/A.
+                                    </div>
+                                    <div class="text-muted bold" style="word-wrap:normal;white-space:nowrap">1 hour ago</div>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="javascript:;" style="border-left:5px solid #FFFFFF;border-left-color:#c1d9ff">
+                                    <big class="bold" style="color:#333">
+                                    <i class="fa fa-star" style="font-size:1.2em"></i>
+                                    Exam Scheduler · Exam Scheduled
+                                    </big>
+                                    <hr style="margin:4px">
+                                    <div class="details" style="color:#000">
+                                       New Exam : unit test published for class: Grade 1 A with following details : GUJARATI (11/30-30 Jun, 12:32 PM | English (11/30-30 Jun, 12:33 PM | Maths (12/30-30 Jun, 12:33 PM
+                                    </div>
+                                    <div class="text-muted bold" style="word-wrap:normal;white-space:nowrap">1 hour ago</div>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="javascript:;" style="border-left:5px solid #FFFFFF;border-left-color:#c1d9ff">
+                                    <big class="bold" style="color:#333">
+                                    <i class="fa fa-star" style="font-size:1.2em"></i>
+                                    Exam Scheduler · Exam Scheduled
+                                    </big>
+                                    <hr style="margin:4px">
+                                    <div class="details" style="color:#000">
+                                       New Exam : unit test published for class: Grade 1 A with following details : GUJARATI (11/30-30 Jun, 12:32 PM | English (11/30-30 Jun, 12:33 PM | Maths (12/30-30 Jun, 12:33 PM
+                                    </div>
+                                    <div class="text-muted bold" style="word-wrap:normal;white-space:nowrap">1 hour ago</div>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="javascript:;" style="border-left:5px solid #FFFFFF;border-left-color:#c1d9ff">
+                                    <big class="bold" style="color:#333">
+                                    <i class="fa fa-star" style="font-size:1.2em"></i>
+                                    Exam Scheduler · Result Declared
+                                    </big>
+                                    <hr style="margin:4px">
+                                    <div class="details" style="color:#000">
+                                       Exam result declared for Monday Exam - Phase 1 by Mr. Gupta
+                                    </div>
+                                    <div class="text-muted bold" style="word-wrap:normal;white-space:nowrap">17 hours ago</div>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="javascript:;" style="border-left:5px solid #FFFFFF;border-left-color:#c1d9ff">
+                                    <big class="bold" style="color:#333">
+                                    <i class="fa fa-star" style="font-size:1.2em"></i>
+                                    Exam Scheduler · Exam Scheduled
+                                    </big>
+                                    <hr style="margin:4px">
+                                    <div class="details" style="color:#000">
+                                       Exam Rescheduled : Monday Exam - Phase 1 published for class: Grade 1 A,Grade 1 B,class 1 c,Grade 1 - E with following details : English (3/10) 29 Jun, 2019 08:00 PM | Maths (3/10) 29 Jun, 2019 09:00 PM | Hindi (3/10) 29 Jun, 2019 10:00 PM | GUJARATI (3/10) 29 Jun, 2019 11:00 PM | Social Study (3/10) 29 Jun, 2019 12:00 AM
+                                    </div>
+                                    <div class="text-muted bold" style="word-wrap:normal;white-space:nowrap">17 hours ago</div>
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </li>
+               </div>
+               <div class="nav navbar-nav pull-left" style="margin-top: 8px">
+                  <select name="" id="" class="form-control confirm-yearchange">
+                     <option value="1797" selected="selected" data-default="1">2018 - 2019</option>
+                     <option value="3032" data-default="0">2019 - 2020</option>
+                  </select>
+               </div>
+               <div class="nav navbar-nav pull-left" style="margin-top: 8px;">
+                  <select name="" id="" class="form-control confirm-departmentchange">
+                     <option value="2624" selected="selected" data-default="1" title="Primary Department">Primary Department</option>
+                     <option value="2625" data-default="0" title="Secondary Department">Secondary Department</option>
+                     <option value="2959" data-default="0" title="Higher Secondary Department">Higher Secondary Dep...</option>
+                     <option value="3013" data-default="0" title="Pre- School">Pre- School</option>
+                     <option value="4673" data-default="0" title="Staff Selection Commission">Staff Selection Comm...</option>
+                  </select>
+               </div>
+               <!-- ENDS YEAR + DEPARTMENT SELECTOR -->
+               <ul class="nav navbar-nav pull-right">
+                  <li class="dropdown dropdown-user dropdown-dark">
+                     <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                     <img src="./Feemanager Dashboard_files/1542692735_profile_pic.jpg" class="img-circle">
+                     <i class="fa fa-angle-down"></i>
+                     </a>
+                     <ul class="dropdown-menu dropdown-menu-default">
+                        <li><a class="username username-hide-on-mobile nav-link" href="https://myclasscampus.com/profile/436309">Mr. Gupta</a></li>
+                        <li class="divider"></li>
+                        <li>
+                           <a href="https://myclasscampus.com/logout" onclick="event.preventDefault();
+                              document.getElementById(&#39;logout-form&#39;).submit();">
+                           <i class="icon-key"></i> Log Out
+                           </a>
+                           <form id="logout-form" action="https://myclasscampus.com/logout" method="POST" style="display: none;">
+                              <input type="hidden" name="_token" value="vzlOieITpigdWvPkMXZcBLQLkGMol6PH37xz6ep0">
+                           </form>
+                        </li>
+                     </ul>
+                  </li>
+                  <!-- END USER LOGIN DROPDOWN -->
+               </ul>
+            </div>
+            <!-- END TOP NAVIGATION MENU -->
+         </div>
+         <!-- END HEADER INNER -->
+      </div>
+      <!-- END HEADER -->
+      <!-- BEGIN HEADER & CONTENT DIVIDER -->
+      <div class="clearfix"> </div>
+      <!-- END HEADER & CONTENT DIVIDER -->
+      <!-- BEGIN CONTAINER -->
+      <div class="page-container">
+         <!-- BEGIN SIDEBAR -->
+         <div class="page-sidebar-wrapper">
+            <!-- BEGIN SIDEBAR -->
+            <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+            <!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+            <div class="page-sidebar navbar-collapse collapse menu">
+               <!-- BEGIN SIDEBAR MENU -->
+               <!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
+               <!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode -->
+               <!-- DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode -->
+               <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+               <!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
+               <!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+               <div class="slimScrollDiv active" style="position: relative; overflow: hidden; width: auto; height: 605px;">
+                  <ul class="page-sidebar-menu  page-header-fixed " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px; overflow: hidden; width: auto; height: 605px;" data-height="605" data-initialized="1">
+                     <li class="nav-item start"><a href="https://myclasscampus.com/" class="nav-link"><i class="icon-home"></i> <span class="title">Home</span></a></li>
+                     <style>
+                        .portlet.light.bordered {
+                        border: 1px solid #ddd !important;
+                        }
+                        .portlet-title {
+                        border-bottom: 1px solid #ddd !important;
+                        }
+                        .page-sidebar-menu > li.nav-item > a.nav-link {
+                        font-weight: bold !important;
+                        }
+                        .page-sidebar-menu .sub-menu .nav-link {
+                        color: gainsboro !important;
+                        }
+                        body {
+                        -webkit-font-smoothing: antialiased;
+                        -moz-osx-font-smoothing: grayscale;
+                        }
+                     </style>
+                     <li class="nav-item active"><a href="https://myclasscampus.com/d/feemanager" class="nav-link"><i class="fa fa-dashboard"></i>
+                        Dashboard</a>
+                     </li>
+                     <li class="nav-item open">
+                        <a href="javascript:;" class="nav-link nav-toggle">
+                        <i class="icon-puzzle"></i>
+                        <span class="title">Master Setup</span>
+                        <span class="arrow"></span>
+                        </a>
+                        <ul class="sub-menu" style="display:block">
+                           <li class="nav-item">
+                              <a href="https://myclasscampus.com/feemanager/account" class="nav-link">
+                              <i class="icon-puzzle"></i>
+                              <span class="title">Account Master</span>
+                              </a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="https://myclasscampus.com/feemanager/categories" class="nav-link">
+                              <i class="icon-puzzle"></i>
+                              <span class="title">Fee Categories</span>
+                              </a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="https://myclasscampus.com/feemanager/batch/fee-names" class="nav-link">
+                              <i class="icon-puzzle"></i>
+                              <span class="title">Fee Names <br> (Fee Sub Categories)</span>
+                              </a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="https://myclasscampus.com/feemanager/collectioncenter" class="nav-link">
+                              <i class="icon-puzzle"></i>
+                              <span class="title">Fee Collection Centers</span>
+                              </a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="https://myclasscampus.com/feemanager/batches" class="nav-link">
+                              <i class="icon-wallet"></i>
+                              <span class="title">Batches</span>
+                              </a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="https://myclasscampus.com/feemanager/transportation" class="nav-link nav-toggle">
+                              <i class="fa fa-truck"></i>
+                              <span class="title">Transportation</span>
+                              </a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="https://myclasscampus.com/feemanager/categorymap" class="nav-link">
+                              <i class="icon-link"></i>
+                              <span class="title">Fee Category Mapping</span>
+                              </a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="nav-item">
+                        <a href="https://myclasscampus.com/feemanager/settings" class="nav-link">
+                        <i class="icon-settings"></i>
+                        <span class="title">All Settings</span>
+                        </a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="https://myclasscampus.com/feemanager/payment" class="nav-link">
+                        <i class="icon-basket"></i>
+                        <span class="title">Fee Payment</span>
+                        </a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="https://myclasscampus.com/feemanager/bulksms" class="nav-link">
+                        <i class="fa fa-send"></i>
+                        <span class="title">Send Due Sms</span>
+                        </a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="https://myclasscampus.com/feemanager/chequehistory" class="nav-link">
+                        <i class="icon-star"></i>
+                        <span class="title">Cheque History</span>
+                        </a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="https://myclasscampus.com/feemanager/student" class="nav-link">
+                        <i class="icon-users"></i>
+                        <span class="title">
+                        Students            </span>
+                        </a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="https://myclasscampus.com/feemanager/lastyearfee" class="nav-link nav-toggle">
+                        <i class="icon-star"></i>
+                        <span class="title">Last Years Pending Fees</span>
+                        </a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="https://myclasscampus.com/feemanager/ban-user-history" class="nav-link nav-toggle">
+                        <i class="icon-ban"></i>
+                        <span class="title">Ban User History</span>
+                        </a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="https://myclasscampus.com/feemanager/demandletter" class="nav-link nav-toggle">
+                        <i class="icon-star"></i>
+                        <span class="title">Demand Letter</span>
+                        </a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="https://myclasscampus.com/feemanager/reports" class="nav-link">
+                        <i class="icon-bar-chart"></i>
+                        <span class="title">All Reports</span>
+                        </a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="https://myclasscampus.com/feemanager2" class="nav-link nav-toggle">
+                        <i class="fa fa-star"></i>
+                        <span class="title">Miscellaneous Fee</span>
+                        </a>
+                     </li>
+                     <!-- END CONTAINER -->
+                  </ul>
+                  <div class="slimScrollBar" style="background: rgb(187, 187, 187); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 427.599px;"></div>
+                  <div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(234, 234, 234); opacity: 0.2; z-index: 90; right: 1px;"></div>
+               </div>
+               <!-- END SIDEBAR MENU -->
+               <!-- END SIDEBAR MENU -->
+            </div>
+            <!-- END SIDEBAR -->
+         </div>
+         <!-- END SIDEBAR -->
+         <div class="modalLoader" style="display: none;z-index: 99999">
+            <img src="./Feemanager Dashboard_files/ajax-loader.gif">
+            <div class="loader_text">System is importing default setup....</div>
+         </div>
+         <!-- BEGIN CONTENT -->
+         <!--Start Alert Content-->
+         <div class="alert-content"></div>
+         <!--End Alert Content-->
+         <div class="page-content-wrapper">
+            <!-- BEGIN CONTENT BODY -->
+            <div class="page-content" style="padding-bottom: 100px; min-height: 605px;">
+               <style>
+                  .amcharts-chart-div a,
+                  #dataTable thead tr th:first-child::after {
+                  display: none !important;
+                  }
+                  .dashboardTopLinks .col-md-2 {
+                  width: 20% !important;
+                  }
+                  .dataTables_filter {
+                  display: none !important;
+                  }
+                  .popover .popover-title {
+                  font-weight: bold;
+                  font-size: 1.2em;
+                  }
+               </style>
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="portlet light bordered">
+                        <div class="portlet-title">
+                           <div class="caption font-dark">
+                              <i class="fa fa-home font-dark"></i>
+                              <span class="caption-subject bold uppercase">Fee Management</span>
+                           </div>
+                           <div class="actions">
+                              <!-- <div class="btn-group btn-group-divided"> -->
+                              <div class="form-inline">
+                                 <!-- <input type="text" class="form-control global_name_search gns_0" placeholder="Student&#39;s name &amp; Press Enter To Search" data-callback="quickfeepay" id="quickfeepay_name" style="width: 310px;font-weight:bold" autocomplete="off"><i class="fa fa-search gns-icon" style="display:inline-block;position:absolute;margin-left:-25px;margin-top:10px;color:#777;"></i> -->
+                                 <div class="search-container">
+                                    <input type="search" placeholder="Student&#39;s name &amp; Press Enter To Search">
+                                 </div>
+                                 <input type="text" class="form-control" placeholder="Unique code" id="quickfeepay_barcode"/>
+                                 <!-- <label class="bold" style="margin-right:5px">Quick Fees Pay</label> -->
+                                 <!-- </div> -->
+                              </div>
+                           </div>
+                        </div>
+                        <div class="portlet-body">
+                           <div class="row">
+                              <div class="col-md-12 dashboardTopLinks">
+                                 <div class="col-md-2">
+                                    <a href="https://myclasscampus.com/feemanager/mastersetup">
+                                       <div class="dashboard-stat blue">
+                                          <div class="visual"><i class="fa fa-plus"></i></div>
+                                          <div class="details">
+                                             <div class="number">1</div>
+                                             <div class="desc">Master Setup</div>
+                                          </div>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="col-md-2">
+                                    <a href="https://myclasscampus.com/feemanager/settings">
+                                       <div class="dashboard-stat purple">
+                                          <div class="visual"><i class="fa fa-cogs"></i></div>
+                                          <div class="details">
+                                             <div class="number">2</div>
+                                             <div class="desc">All Settings</div>
+                                          </div>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="col-md-2">
+                                    <a href="https://myclasscampus.com/feemanager/reports">
+                                       <div class="dashboard-stat red">
+                                          <div class="visual"><i class="fa fa-cogs"></i></div>
+                                          <div class="details">
+                                             <div class="number">3</div>
+                                             <div class="desc">All Reports</div>
+                                          </div>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="col-md-2">
+                                    <a href="https://myclasscampus.com/feemanager/payment">
+                                       <div class="dashboard-stat green">
+                                          <div class="visual"><i class="fa fa-users"></i></div>
+                                          <div class="details">
+                                             <div class="number">4</div>
+                                             <div class="desc">Collect Fees</div>
+                                          </div>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="col-md-2">
+                                    <a href="https://myclasscampus.com/feemanager2">
+                                       <div class="dashboard-stat green-jungle">
+                                          <div class="visual"><i class="fa fa-users"></i></div>
+                                          <div class="details">
+                                             <div class="number">5</div>
+                                             <div class="desc">Miscellaneous Fee</div>
+                                          </div>
+                                       </div>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                            <div class="portlet light bordered">
+                                <div class="portlet-title">
+                                    <div class="caption font-dark">
+                                        <strong>Latest Transactions</strong>
+                                    </div>
+                                    <div class="actions">
+                                        <form action="https://myclasscampus.com/feemanager/payment/excelexport" method="post" id="frm_fee_payment_report" style="float: right;">
+                                        <input type="hidden" name="_token" value="vzlOieITpigdWvPkMXZcBLQLkGMol6PH37xz6ep0">
+                                        <div class="flex-container">
+                                             <div class="pad-horizontal-5">
+                                                <input type="text" name="fee_date" id="fee_date" class="form-control datepicker search_input" placeholder="Select Date" value="" autocomplete="off">
+                                                <input type="hidden" name="receipt_no" id="excel_receipt_no">
+                                                <input type="hidden" name="receipt_date" id="excel_receipt_date">
+                                                <input type="hidden" name="student_name" id="excel_student_name">
+                                                <input type="hidden" name="receipt_amount" id="excel_receipt_amount">
+                                                <input type="hidden" name="receipt_mode" id="excel_receipt_mode">
+                                                <input type="hidden" name="cheque_no" id="excel_cheque_no">
+                                                <input type="hidden" name="cheque_date" id="excel_cheque_date">
+                                                <input type="hidden" name="bank_name" id="excel_bank_name">
+                                                <input type="hidden" name="collector_name" id="excel_collector_name">
+                                                <input type="hidden" name="custom_receipt_no" id="excel_custom_receipt_no">
+                                             </div>
+                                             <div class="pad-horizontal-5">
+                                                <button type="submit" class="btn btn-primary btn_get_report" name="button">
+                                                   <span class="fa fa-download"></span> Export To Excel
+                                                </button>
+                                             </div>
+                                        </div>
+                                        </form>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <div class="portlet-body">
+                                    <div id="dataTable_wrapper" class="dataTables_wrapper">
+                                        <div class="row">
+                                        <div class="table-scrollable">
+                                        <table class="table table-striped table-bordered table-hover dataTable" id="dataTable" role="grid" aria-describedby="dataTable_info" style="width: 1180px;">
+                                            <thead>
+                                                <tr role="row">
+                                                    <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 59px;" aria-label="Action: activate to sort column ascending">Action</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 110px;" aria-label="Receipt No: activate to sort column ascending">Receipt No</th>
+                                                    <th class="sorting_desc" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 35px;" aria-sort="descending" aria-label="Date: activate to sort column ascending">Date</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 59px;" aria-label="Student Name: activate to sort column ascending">Student Name</th>
+                                                    <th class="text sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 61px;" aria-label="Amount: activate to sort column ascending">Amount</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 42px;" aria-label="Mode: activate to sort column ascending">Mode</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 57px;" aria-label="Cheque No: activate to sort column ascending">Cheque No</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 57px;" aria-label="Cheque Date: activate to sort column ascending">Cheque Date</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 39px;" aria-label="Bank: activate to sort column ascending">Bank</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 66px;" aria-label="Collector Name: activate to sort column ascending">Collector Name</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 57px;" aria-label="Custom Receipt No.: activate to sort column ascending">Custom Receipt No.</th>
+                                                </tr>
+                                            </thead>
+                                            <tfoot class="footerSearch" style="display:  table-row-group;">
+                                                <tr>
+                                                    <th rowspan="1" colspan="1">
+                                                    <button type="button" class="btn btn-sm red btn-outline filter-cancel btn_reset_filter" id="clearInputFilter"><i class="fa fa-times"></i>
+                                                    Clear                                                    </button>
+                                                    </th>
+                                                    <th rowspan="1" colspan="1"><input type="text" class="form-control search_input" placeholder="Search" id="receipt_no"></th>
+                                                    <th rowspan="1" colspan="1"><input type="text" class="form-control search_input datepicker" placeholder="Search" id="receipt_date"></th>
+                                                    <th rowspan="1" colspan="1"><input type="text" class="form-control search_input" placeholder="Search" id="student_name"></th>
+                                                    <th class="text" rowspan="1" colspan="1"><input type="text" class="form-control search_input" placeholder="Search" id="receipt_amount"></th>
+                                                    <th rowspan="1" colspan="1">
+                                                    <select class="form-control search_input" id="receipt_mode">
+                                                        <option value="">-Select-</option>
+                                                        <option value="0">Cash</option>
+                                                        <option value="1">Cheque</option>
+                                                        <option value="2">Online</option>
+                                                        <option value="3">Mobile Wallets</option>
+                                                        <option value="4">DD</option>
+                                                        <option value="6">Others</option>
+                                                        <option value="1001">Wallet</option>
+                                                    </select>
+                                                    </th>
+                                                    <th rowspan="1" colspan="1"><input type="text" class="form-control search_input" placeholder="Search" id="cheque_no"></th>
+                                                    <th rowspan="1" colspan="1"><input type="text" class="form-control search_input datepicker" placeholder="Search" id="cheque_date"></th>
+                                                    <th rowspan="1" colspan="1"><input type="text" class="form-control search_input" placeholder="Search" id="bank_name"></th>
+                                                    <th rowspan="1" colspan="1"><input type="text" class="form-control search_input" placeholder="Search" id="collector_name"></th>
+                                                    <th rowspan="1" colspan="1"><input type="text" class="form-control search_input" placeholder="Search" id="custom_receipt_no"></th>
+                                                </tr>
+                                            </tfoot>
+                                            <tbody>
+                                                <tr role="row" class="odd">
+                                                    <td>
+                                                    <ul class="list-inline" style="display: inline-flex;">
+                                                        <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/edit/241071" class="btn btn-primary btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Edit" data-original-title="" title=""><i class="fa fa-pencil"></i></a></li>
+                                                        <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/receipt/241071" class="btn btn-info btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Print" data-original-title="" title=""><i class="fa fa-print"></i></a></li>
+                                                    </ul>
+                                                    </td>
+                                                    <td>2018 - 2019/1521/2624/best edu/70</td>
+                                                    <td class="sorting_1">2019-06-30</td>
+                                                    <td>Indrajit</td>
+                                                    <td class=" text">8000.00</td>
+                                                    <td>Cash</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Mr. Gupta</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td>
+                                                    <ul class="list-inline" style="display: inline-flex;">
+                                                        <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/edit/241072" class="btn btn-primary btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Edit" data-original-title="" title=""><i class="fa fa-pencil"></i></a></li>
+                                                        <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/receipt/241072" class="btn btn-info btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Print" data-original-title="" title=""><i class="fa fa-print"></i></a></li>
+                                                    </ul>
+                                                    </td>
+                                                    <td>2018 - 2019/1521/2624/best/57</td>
+                                                    <td class="sorting_1">2019-06-30</td>
+                                                    <td>Indrajit</td>
+                                                    <td class=" text">2000.00</td>
+                                                    <td>Cash</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Mr. Gupta</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td>
+                                                    <ul class="list-inline" style="display: inline-flex;">
+                                                        <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/edit/241076" class="btn btn-primary btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Edit" data-original-title="" title=""><i class="fa fa-pencil"></i></a></li>
+                                                        <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/receipt/241076" class="btn btn-info btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Print" data-original-title="" title=""><i class="fa fa-print"></i></a></li>
+                                                    </ul>
+                                                    </td>
+                                                    <td>2018 - 2019/1521/2624/best edu/71</td>
+                                                    <td class="sorting_1">2019-06-30</td>
+                                                    <td>Jayesh</td>
+                                                    <td class=" text">8000.00</td>
+                                                    <td>Cash</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Mr. Gupta</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td>
+                                                    <ul class="list-inline" style="display: inline-flex;">
+                                                        <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/edit/241077" class="btn btn-primary btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Edit" data-original-title="" title=""><i class="fa fa-pencil"></i></a></li>
+                                                        <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/receipt/241077" class="btn btn-info btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Print" data-original-title="" title=""><i class="fa fa-print"></i></a></li>
+                                                    </ul>
+                                                    </td>
+                                                    <td>2018 - 2019/1521/2624/best/58</td>
+                                                    <td class="sorting_1">2019-06-30</td>
+                                                    <td>Jayesh</td>
+                                                    <td class=" text">2000.00</td>
+                                                    <td>Cash</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Mr. Gupta</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td>
+                                                    <ul class="list-inline" style="display: inline-flex;">
+                                                        <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/edit/239679" class="btn btn-primary btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Edit" data-original-title="" title=""><i class="fa fa-pencil"></i></a></li>
+                                                        <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/receipt/239679" class="btn btn-info btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Print" data-original-title="" title=""><i class="fa fa-print"></i></a></li>
+                                                    </ul>
+                                                    </td>
+                                                    <td>2018 - 2019/1521/2624/best edu/69</td>
+                                                    <td class="sorting_1">2019-06-29</td>
+                                                    <td>Divyansh</td>
+                                                    <td class=" text">8000.00</td>
+                                                    <td>Cash</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Mr. Gupta</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td>
+                                                    <ul class="list-inline" style="display: inline-flex;">
+                                                        <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/edit/239680" class="btn btn-primary btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Edit" data-original-title="" title=""><i class="fa fa-pencil"></i></a></li>
+                                                        <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/receipt/239680" class="btn btn-info btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Print" data-original-title="" title=""><i class="fa fa-print"></i></a></li>
+                                                    </ul>
+                                                    </td>
+                                                    <td>2018 - 2019/1521/2624/best/56</td>
+                                                    <td class="sorting_1">2019-06-29</td>
+                                                    <td>Divyansh</td>
+                                                    <td class=" text">2000.00</td>
+                                                    <td>Cash</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Mr. Gupta</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td>
+                                                    <ul class="list-inline" style="display: inline-flex;">
+                                                        <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/edit/237601" class="btn btn-primary btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Edit" data-original-title="" title=""><i class="fa fa-pencil"></i></a></li>
+                                                        <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/receipt/237601" class="btn btn-info btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Print" data-original-title="" title=""><i class="fa fa-print"></i></a></li>
+                                                    </ul>
+                                                    </td>
+                                                    <td>2018 - 2019/1521/2624/best edu/66</td>
+                                                    <td class="sorting_1">2019-06-27</td>
+                                                    <td>Raj Malhotra</td>
+                                                    <td class=" text">8000.00</td>
+                                                    <td>Cash</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Mr. Gupta</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td>
+                                                    <ul class="list-inline" style="display: inline-flex;">
+                                                        <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/edit/237602" class="btn btn-primary btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Edit" data-original-title="" title=""><i class="fa fa-pencil"></i></a></li>
+                                                        <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/receipt/237602" class="btn btn-info btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Print" data-original-title="" title=""><i class="fa fa-print"></i></a></li>
+                                                    </ul>
+                                                    </td>
+                                                    <td>2018 - 2019/1521/2624/best/54</td>
+                                                    <td class="sorting_1">2019-06-27</td>
+                                                    <td>Raj Malhotra</td>
+                                                    <td class=" text">1334.00</td>
+                                                    <td>Cash</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Mr. Gupta</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td>
+                                                    <ul class="list-inline" style="display: inline-flex;">
+                                                        <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/edit/237606" class="btn btn-primary btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Edit" data-original-title="" title=""><i class="fa fa-pencil"></i></a></li>
+                                                        <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/receipt/237606" class="btn btn-info btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Print" data-original-title="" title=""><i class="fa fa-print"></i></a></li>
+                                                    </ul>
+                                                    </td>
+                                                    <td>2018 - 2019/1521/2624/best edu/67</td>
+                                                    <td class="sorting_1">2019-06-27</td>
+                                                    <td>Jayesh</td>
+                                                    <td class=" text">7800.00</td>
+                                                    <td>Cash</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Mr. Gupta</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td>
+                                                    <ul class="list-inline" style="display: inline-flex;">
+                                                        <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/edit/237607" class="btn btn-primary btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Edit" data-original-title="" title=""><i class="fa fa-pencil"></i></a></li>
+                                                        <li style="padding-left:0;padding-right:0"><a href="https://myclasscampus.com/feemanager/payment/fees/receipt/237607" class="btn btn-info btn-xs popovers" data-container="body" data-trigger="hover" data-placement="top" data-content="Print" data-original-title="" title=""><i class="fa fa-print"></i></a></li>
+                                                    </ul>
+                                                    </td>
+                                                    <td>2018 - 2019/1521/2624/best/55</td>
+                                                    <td class="sorting_1">2019-06-27</td>
+                                                    <td>Jayesh</td>
+                                                    <td class=" text">2000.00</td>
+                                                    <td>Cash</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Mr. Gupta</td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        </div>
+                                        <div class="pagination-container">
+                                        <div class="pagination-entries">
+                                            <div class="dataTables_info" id="dataTable_info" role="status" aria-live="polite">Showing 1 to 10 of 113 entries</div>
+                                        </div>
+                                        <div class="pagination-nevigation">
+                                            <div class="dataTables_paginate paging_bootstrap_number" id="dataTable_paginate">
+                                                <ul class="pagination" style="visibility: visible;">
+                                                    <li class="prev disabled"><a href="https://myclasscampus.com/d/feemanager#" title="Prev"><i class="fa fa-angle-left"></i></a></li>
+                                                    <li class="active"><a href="https://myclasscampus.com/d/feemanager#">1</a></li>
+                                                    <li><a href="https://myclasscampus.com/d/feemanager#">2</a></li>
+                                                    <li><a href="https://myclasscampus.com/d/feemanager#">3</a></li>
+                                                    <li><a href="https://myclasscampus.com/d/feemanager#">4</a></li>
+                                                    <li><a href="https://myclasscampus.com/d/feemanager#">5</a></li>
+                                                    <li class="next"><a href="https://myclasscampus.com/d/feemanager#" title="Next"><i class="fa fa-angle-right"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="pagination-page-count">
+                                             <div class="dataTables_length" id="dataTable_length">
+                                                 <label>
+                                                     <select name="dataTable_length" aria-controls="dataTable" class="form-control input-sm input-xsmall input-inline">
+                                                     <option value="10">10</option>
+                                                     <option value="25">25</option>
+                                                     <option value="50">50</option>
+                                                     </select>
+                                                     records 
+                                                 </label>
+                                             </div>
+                                         </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                     
+                  </div>
+               </div>
+            </div>
+            <!-- END CONTENT BODY -->
+         </div>
+         <!-- END CONTENT -->
+         <div class="page-quick-sidebar-wrapper">
+            <div class="page-quick-sidebar">
+               <a href="javascript:;" class="page-quick-sidebar-toggler">
+               <i class="icon-home"></i>
+               </a>
+               <div>
+                  <h4 style="padding: 7px 15px" class="font-green-jungle">Help Content</h4>
+                  <hr style="border-color: #39454F; margin: 0;">
+                  <a id="url" href="https://myclasscampus.com/d/feemanager"></a>
+                  <div class="help-loader">
+                     <center>
+                        <i class="fa fa-circle-o-notch fa-spin" style="font-size: 32px;margin-top: 50px;"></i>
+                        <br><br>
+                        Loading Help Content
+                     </center>
+                  </div>
+                  <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 655px;">
+                     <div class="scroller" style="position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; overflow: hidden; width: auto; height: 655px;" data-initialized="1">
+                        <div class="help-content font-grey-salt" style="margin: 10px 10px 100px 10px;overflow-y: auto;overflow-x: hidden;">
+                        </div>
+                     </div>
+                     <div class="slimScrollBar" style="background: rgb(187, 187, 187); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 655px;"></div>
+                     <div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(234, 234, 234); opacity: 0.2; z-index: 90; right: 1px;"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="animated fade" id="modal_global_get_users" style="display: none;">
+            <div class="modal-dialog modal-lg" style="min-width: 80%!important">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                     <h4 class="modal-title font-green-steel bold">Import Users</h4>
+                  </div>
+                  <div class="modal-body">
+                     <div class="portlet box bg-green" style="margin-bottom: 0px;z-index: 999">
+                        <div class="portlet-title">
+                           <div class="caption font-dark">
+                              <span class="caption-subject bold">
+                              <i class="fa fa-search"></i> Search..
+                              </span>
+                           </div>
+                           <div class="tools">
+                              <a href="javascript:;" class="collapse" data-original-title="" title=""> </a>
+                           </div>
+                        </div>
+                        <div class="portlet-body">
+                           <div class="row">
+                              <div class="form-group col-md-12">
+                                 <label class="control-label col-md-2 bold">Use search method :</label>
+                                 <div class="col-md-10">
+                                    <input type="radio" name="global_filter_user" class="global_search_method" value="1" checked=""> By Classrooms
+                                    <input type="radio" name="global_filter_user" class="global_search_method" value="2"> By Standards
+                                 </div>
+                              </div>
+                              <div class="form-group col-md-12 standard_search_note">
+                                 <div class="alert alert-info alert-dismissable">
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+                                    <p><i class="fa fa-info-circle"></i> Classrooms will be accessible only after setting all subjects 2 for given class..</p>
+                                 </div>
+                              </div>
+                              <div class="form-group col-md-3">
+                                 <label class="control-label col-md-12 bold">Select Roles :</label>
+                                 <div class="col-md-12">
+                                    <span class="multiselect-native-select">
+                                       <select name="global_role_id" id="global_role_id1" class="global_role_id form-control mt-multiselect" required="" multiple="multiple" disabled="">
+                                       </select>
+                                       <div class="btn-group" style="width: 100%;">
+                                          <button type="button" class="multiselect dropdown-toggle btn btn-default disabled" data-toggle="dropdown" title="None selected" disabled="" style="width: 100%; overflow: hidden; text-overflow: ellipsis;"><span class="multiselect-selected-text">None selected</span> <b class="caret"></b></button>
+                                          <ul class="multiselect-container dropdown-menu" style="max-height: 300px; overflow: hidden auto;"></ul>
+                                       </div>
+                                    </span>
+                                 </div>
+                                 <span class="error alert"></span>
+                              </div>
+                              <div class="form-group col-md-3">
+                                 <label class="control-label col-md-12 bold">Departments :</label>
+                                 <div class="col-md-12">
+                                    <span class="multiselect-native-select">
+                                       <select name="global_department" id="global_department" class="form-control mt-multiselect" required="" multiple="multiple">
+                                          <option value="2624">Primary Department</option>
+                                          <option value="2625">Secondary Department</option>
+                                          <option value="2959">Higher Secondary Department</option>
+                                          <option value="3013">Pre- School</option>
+                                          <option value="4673">Staff Selection Commission</option>
+                                       </select>
+                                       <div class="btn-group" style="width: 100%;">
+                                          <button type="button" class="multiselect dropdown-toggle btn btn-default" data-toggle="dropdown" title="None selected" style="width: 100%; overflow: hidden; text-overflow: ellipsis;"><span class="multiselect-selected-text">None selected</span> <b class="caret"></b></button>
+                                          <ul class="multiselect-container dropdown-menu" style="max-height: 300px; overflow: hidden auto;">
+                                             <li class="multiselect-item multiselect-filter" value="0">
+                                                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span><input class="form-control multiselect-search" type="text" placeholder="Search"><span class="input-group-btn"><button class="btn btn-default multiselect-clear-filter" type="button"><i class="glyphicon glyphicon-remove-circle"></i></button></span></div>
+                                             </li>
+                                             <li class="multiselect-item multiselect-all"><a tabindex="0" class="multiselect-all"><label class="checkbox"><input type="checkbox" value="multiselect-all">  Select all</label></a></li>
+                                             <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="2624"> Primary Department</label></a></li>
+                                             <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="2625"> Secondary Department</label></a></li>
+                                             <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="2959"> Higher Secondary Department</label></a></li>
+                                             <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="3013"> Pre- School</label></a></li>
+                                             <li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="4673"> Staff Selection Commission</label></a></li>
+                                          </ul>
+                                       </div>
+                                    </span>
+                                 </div>
+                              </div>
+                              <div class="form-group col-md-2 div_global_standards" style="display: none">
+                                 <label class="control-label col-md-12 bold">Standards :</label>
+                                 <div class="col-md-12">
+                                    <span class="multiselect-native-select">
+                                       <select name="global_standards" id="global_standards" class="form-control mt-multiselect" required="" multiple="multiple" disabled="">
+                                       </select>
+                                       <div class="btn-group" style="width: 100%;">
+                                          <button type="button" class="multiselect dropdown-toggle btn btn-default disabled" data-toggle="dropdown" title="None selected" disabled="" style="width: 100%; overflow: hidden; text-overflow: ellipsis;"><span class="multiselect-selected-text">None selected</span> <b class="caret"></b></button>
+                                          <ul class="multiselect-container dropdown-menu" style="max-height: 300px; overflow: hidden auto;"></ul>
+                                       </div>
+                                    </span>
+                                 </div>
+                              </div>
+                              <div class="form-group col-md-2 div_global_std_sub" style="display: none">
+                                 <label class="control-label col-md-12 bold">Std's Subjects :</label>
+                                 <div class="col-md-12">
+                                    <span class="multiselect-native-select">
+                                       <select name="global_std_subjects" id="global_std_subjects" class="form-control mt-multiselect" required="" multiple="multiple" disabled="">
+                                       </select>
+                                       <div class="btn-group" style="width: 100%;">
+                                          <button type="button" class="multiselect dropdown-toggle btn btn-default disabled" data-toggle="dropdown" title="None selected" disabled="" style="width: 100%; overflow: hidden; text-overflow: ellipsis;"><span class="multiselect-selected-text">None selected</span> <b class="caret"></b></button>
+                                          <ul class="multiselect-container dropdown-menu" style="max-height: 300px; overflow: hidden auto;"></ul>
+                                       </div>
+                                    </span>
+                                 </div>
+                              </div>
+                              <div class="form-group col-md-2 div_global_classroom" style="display: none">
+                                 <label class="control-label col-md-12 bold">Classrooms :</label>
+                                 <div class="col-md-12">
+                                    <span class="multiselect-native-select">
+                                       <select name="global_classrooms" id="global_classrooms" class="form-control mt-multiselect" required="" multiple="multiple" disabled="">
+                                       </select>
+                                       <div class="btn-group" style="width: 100%;">
+                                          <button type="button" class="multiselect dropdown-toggle btn btn-default disabled" data-toggle="dropdown" title="None selected" disabled="" style="width: 100%; overflow: hidden; text-overflow: ellipsis;"><span class="multiselect-selected-text">None selected</span> <b class="caret"></b></button>
+                                          <ul class="multiselect-container dropdown-menu" style="max-height: 300px; overflow: hidden auto;"></ul>
+                                       </div>
+                                    </span>
+                                 </div>
+                              </div>
+                              <div class="form-group col-md-3 div_global_class_subjects" style="display: none">
+                                 <label class="control-label col-md-12 bold">Subjects :</label>
+                                 <div class="col-md-12">
+                                    <span class="multiselect-native-select">
+                                       <select name="global_class_subjects" id="global_class_subjects" class="form-control mt-multiselect" required="" multiple="multiple" disabled="">
+                                       </select>
+                                       <div class="btn-group" style="width: 100%;">
+                                          <button type="button" class="multiselect dropdown-toggle btn btn-default disabled" data-toggle="dropdown" title="None selected" disabled="" style="width: 100%; overflow: hidden; text-overflow: ellipsis;"><span class="multiselect-selected-text">None selected</span> <b class="caret"></b></button>
+                                          <ul class="multiselect-container dropdown-menu" style="max-height: 300px; overflow: hidden auto;"></ul>
+                                       </div>
+                                    </span>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="form-group col-md-12">
+                                    <br>
+                                    <center><button type="submit" id="btn_global_search_employees" name="search" class="btn btn-primary" style="width: 25%">Search</button></center>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <center>
+                                 <h4 class="well well-sm font-green-steel">OR</h4>
+                              </center>
+                           </div>
+                           <div class="row">
+                              <div class="form-group col-md-3">
+                                 <label class="control-label col-md-12 bold">Select Roles :</label>
+                                 <div class="col-md-12">
+                                    <span class="multiselect-native-select">
+                                       <select name="global_role_id" id="global_role_id2" class="global_role_id form-control mt-multiselect" required="" multiple="multiple" disabled="">
+                                       </select>
+                                       <div class="btn-group" style="width: 100%;">
+                                          <button type="button" class="multiselect dropdown-toggle btn btn-default disabled" data-toggle="dropdown" title="None selected" disabled="" style="width: 100%; overflow: hidden; text-overflow: ellipsis;"><span class="multiselect-selected-text">None selected</span> <b class="caret"></b></button>
+                                          <ul class="multiselect-container dropdown-menu" style="max-height: 300px; overflow: hidden auto;"></ul>
+                                       </div>
+                                    </span>
+                                 </div>
+                                 <span class="error alert"></span>
+                              </div>
+                              <div class="form-group col-md-6">
+                                 <label class="control-label col-md-12 bold">&nbsp;</label>
+                                 <div class="row">
+                                    <div class="col-md-4">
+                                       <input type="text" name="global_searchby_name" id="global_searchby_name" class="form-control col-md-3" placeholder="Search by name">
+                                    </div>
+                                    <div class="col-md-4">
+                                       <input type="text" name="global_searchby_mobile" id="global_searchby_mobile" class="form-control col-md-3" placeholder="Search by mobile">
+                                    </div>
+                                    <div class="col-md-4">
+                                       <input type="text" name="global_searchby_gr_no" id="global_searchby_gr_no" class="form-control col-md-3" placeholder="Search by GR No.">
+                                    </div>
+                                 </div>
+                                 <span class="error alert"></span>
+                              </div>
+                              <div class="form-group col-md-3">
+                                 <label class="control-label col-md-12 bold">&nbsp;</label>
+                                 <center><button type="submit" id="btn_global_search_employees1" name="search1" class="btn btn-primary col-md-12">Search</button></center>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="global_users_list"></div>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+               <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+         </div>
+      </div>
+      <!--[if lt IE 9]>
+      <script src="https://myclasscampus.com/assets/global/plugins/respond.min.js"></script>
+      <script src="https://myclasscampus.com/assets/global/plugins/excanvas.min.js"></script>
+      <script src="https://myclasscampus.com/assets/global/plugins/ie8.fix.min.js }}"></script>
+      <![endif]-->
+      <!-- BEGIN CORE PLUGINS -->
+      <script type="text/javascript" async="" src="./Feemanager Dashboard_files/analytics.js"></script><script src="./Feemanager Dashboard_files/jquery.min.js" type="text/javascript"></script>
+      <script src="./Feemanager Dashboard_files/bootstrap.min.js" type="text/javascript"></script>
+      <script src="./Feemanager Dashboard_files/js.cookie.min.js" type="text/javascript"></script>
+      <script src="./Feemanager Dashboard_files/jquery.slimscroll.min.js" type="text/javascript"></script>
+      <script src="./Feemanager Dashboard_files/bootstrap-colorpicker.js" type="text/javascript"></script>
+      <script src="./Feemanager Dashboard_files/jquery.minicolors.min.js" type="text/javascript"></script>
+      <!-- END CORE PLUGINS -->
+      <!-- BEGIN THEME GLOBAL SCRIPTS -->
+      <script src="./Feemanager Dashboard_files/app.min.js" type="text/javascript"></script>
+      <!-- END THEME GLOBAL SCRIPTS -->
+      <!-- BEGIN PAGE LEVEL SCRIPTS -->
+      <script src="./Feemanager Dashboard_files/components-color-pickers.min.js" type="text/javascript"></script>
+      <!-- END PAGE LEVEL SCRIPTS -->
+      <!-- BEGIN THEME LAYOUT SCRIPTS -->
+      <script src="./Feemanager Dashboard_files/layout.min.js" type="text/javascript"></script>
+      <!-- END THEME LAYOUT SCRIPTS -->
+      <!-- BEGIN PAGE LEVEL SCRIPTS -->
+      <script src="./Feemanager Dashboard_files/datatables.min.js" type="text/javascript"></script>
+      <script src="./Feemanager Dashboard_files/datatables.bootstrap.js" type="text/javascript"></script>
+      <script src="./Feemanager Dashboard_files/select2.full.min.js" type="text/javascript"></script>
+      <script src="./Feemanager Dashboard_files/jquery.validate.min.js" type="text/javascript"></script>
+      <script src="./Feemanager Dashboard_files/additional-methods.min.js" type="text/javascript"></script>
+      <script src="./Feemanager Dashboard_files/bootstrap-datepicker.min.js" type="text/javascript"></script>
+      <script src="./Feemanager Dashboard_files/bootstrap-timepicker.min.js" type="text/javascript"></script>
+      <script src="./Feemanager Dashboard_files/bootstrap-multiselect.js" type="text/javascript"></script>
+      <script src="./Feemanager Dashboard_files/sweetalert.min.js" type="text/javascript"></script>
+      <script src="./Feemanager Dashboard_files/jquery.multi-select.js" type="text/javascript"></script>
+      <script src="./Feemanager Dashboard_files/jquery.quicksearch.js" type="text/javascript"></script>
+      <script src="./Feemanager Dashboard_files/jquery.nestable.js" type="text/javascript"></script>
+      <script src="./Feemanager Dashboard_files/ckeditor.js" type="text/javascript"></script>
+      <script src="./Feemanager Dashboard_files/bootstrap-fileinput.js" type="text/javascript"></script>
+      <script src="./Feemanager Dashboard_files/toastr.min.js" type="text/javascript"></script>
+      <script src="./Feemanager Dashboard_files/profile.min.js" type="text/javascript"></script>
+      <script src="./Feemanager Dashboard_files/jquery.sparkline.min.js" type="text/javascript"></script>
+      <script src="./Feemanager Dashboard_files/jscolor.js" type="text/javascript"></script>
+      <!-- END PAGE LEVEL SCRIPTS -->
+      <!-- BEGIN CUSTOM SCRIPTS -->
+      <script src="./Feemanager Dashboard_files/custom.js" type="text/javascript"></script>
+      <script src="./Feemanager Dashboard_files/dataTables.buttons.min.js" type="text/javascript"></script>
+      <script src="./Feemanager Dashboard_files/buttons.colVis.min.js" type="text/javascript"></script>
+      <script src="./Feemanager Dashboard_files/moment.js" type="text/javascript"></script>
+      <script src="./Feemanager Dashboard_files/HoldOn.js"></script>
+      <script src="./Feemanager Dashboard_files/jquery.debounce.min.js"></script>
+      <!-- <script src="https://myclasscampus.com/assets/lesson/js/custom.js" type="text/javascript"></script> -->
+      <script src="./Feemanager Dashboard_files/bootstrap-confirmation.min.js" type="text/javascript"></script>
+      <script>
+         $( ".datepicker" ).datepicker({
+             format: "yyyy-mm-dd",
+             // viewMode: "months",
+             // minViewMode: "months",
+             orientation: 'bottom left',
+             todayHighlight: true,
+             autoclose:true,
+         });
+         
+         $(function() {
+             var table = $("#dataTable").DataTable({
+                 processing: true,
+                 serverSide: true,
+                 ajax: {
+                     url: "https://myclasscampus.com/feemanager/payment/paymentdatatable",
+                     type: "POST",
+                     "data":function ( d ) {
+                         d._token = "vzlOieITpigdWvPkMXZcBLQLkGMol6PH37xz6ep0";
+                         var search_filters = {};
+                         search_filters['receipt_no']            = $("#receipt_no").val();
+                         search_filters['date']                  = $("#receipt_date").val();
+                         search_filters['student_name']          = $("#student_name").val();
+                         search_filters['amount']                = $("#receipt_amount").val();
+                         search_filters['type']                  = $("#receipt_mode").val();
+                         search_filters['cheque_no']             = $("#cheque_no").val();
+                         search_filters['cheque_date']           = $("#cheque_date").val();
+                         search_filters['bank_name']             = $("#bank_name").val();
+                         search_filters['collector_name']        = $("#collector_name").val();
+                         search_filters['custom_receipt_no']     = $("#custom_receipt_no").val();
+                         search_filters['fee_date']              = $("#fee_date").val();
+                         d.search_input = search_filters;
+                     },
+                 },
+                 columns: [
+                     { data: "action"},
+                     { data: "receipt_no_display"},
+                     { data: "date"},
+                     { data: "has_feestudent_and_exist.profile.name"},
+                     { data: "amount", className: "text",render: function(data, type, full, meta) { return parseFloat(data).toFixed(2); } },
+                     { data: "type"},
+                     { data: "cheque_no" },
+                     { data: "cheque_date" },
+                     { data: "bank_name" },
+                     { data: "collector_name"},
+                     { data: "custom_receipt_no" }
+                 ],
+                 lengthMenu: [[10, 25, 50], [10, 25, 50]],
+                 order: [ [2, 'desc'] ],
+                 // dom: 'Blfrtip',
+                 // buttons: [
+                 //     'copy', 'csv', 'excel', 'pdf', 'print'
+                 // ],
+                 initComplete: function () {
+                     // this.api().columns(':gt(0)').every(function () {
+                     //     var column = this;
+                     //     if ($(column.header()).hasClass('select')) {
+                     //         console.log(column);
+                     //         var select = $('<select class="form-control"></select>')
+                     //                 .appendTo($(column.footer()).empty())
+                     //                 .on('change', function (e) {
+                     //                     e.stopImmediatePropagation();
+                     //                     var val = $.fn.dataTable.util.escapeRegex($(this).val());
+                     //                     column.search(val ? '^' + val + '$' : '', true, false).draw();
+                     //                     return false;
+                     //                 });
+         
+                     //         if($(column.header()).hasClass('mode')) {
+         
+                     //             select.append('<option value="">-Select-</option><option value=1>Cheque</option><option value=2>Online</option><option value=3>Paytm</option><option value=4>DD</option><option value=6>Other</option>');
+                     //         }else{
+                     //             column.data().unique().sort().each(function (d, j) {
+                     //                 select.append('<option value="' + d + '">' + d + '</option>');
+                     //             });
+                     //         }
+                     //     } else if ($(column.header()).hasClass('text')) {
+                     //         var text = $('<input type="text" class="form-control" placeholder="' + $(column.header()).html() + '" />')
+                     //                 .appendTo($(column.footer()).empty())
+                     //                 .on('change', function () {
+                     //                     var val = $.fn.dataTable.util.escapeRegex($(this).val());
+                     //                     if (column.search() !== this.value) {
+                     //                         column.search(val).draw();
+                     //                     }
+                     //                     return false;
+                     //                 });
+         
+                     //     }
+                     // });
+                 },
+             });
+         
+             $(document).on('change','.search_input',function(){
+                 table.ajax.reload();
+             });
+         
+             $('#clearInputFilter').click(function(event){
+                 $('.footerSearch').find('input:text').val('');
+                 $("#dataTable").DataTable().columns().search('');
+                 $("#dataTable").DataTable().ajax.reload(null, false);
+             });
+         
+             $(document).on('click', '.removeBtn', function() {
+                 if(confirm("Are you sure want to remove???")) {
+                     return true;
+                 }
+                 return false;
+             });
+         
+             $(document).ajaxStart(function () {
+                 fnDisplayLoader();
+             });
+         
+             $(document).ajaxComplete(function () {
+                 $('.popovers').popover();
+                 fnHideLoader();
+             });
+         
+             // Quickfeepay
+             $(document).on("change", "#quickfeepay_barcode", function() {
+                 if($(this).val() != "") {
+                     quickfeepay();
+                 }
+             });
+         
+             $('#frm_fee_payment_report').on('submit', function(e) {
+                 e.preventDefault();
+                 $form = this;
+                 var export_date = $("#fee_date").val();
+                 if(export_date === ''){
+                     var d = new Date();
+         
+                     var month = d.getMonth()+1;
+                     var day = d.getDate();
+         
+                     var export_date = d.getFullYear() + '-' + (month<10 ? '0' : '') + month + '-' + (day<10 ? '0' : '') + day;
+                 }
+         
+                 swal({
+                     title: "Are You Sure You Want To Export Fees Data For Date "+export_date+"?",
+                     type: "warning",
+                     showCancelButton: true
+                 }, function() {
+                     $("#excel_receipt_no").val($("#receipt_no").val());
+                     $("#excel_receipt_date").val($("#receipt_date").val());
+                     $("#excel_student_name").val($("#student_name").val());
+                     $("#excel_receipt_amount").val($("#receipt_amount").val());
+                     $("#excel_receipt_mode").val($("#receipt_mode").find(":selected").val());
+                     $("#excel_cheque_no").val($("#cheque_no").val());
+                     $("#excel_cheque_date").val($("#cheque_date").val());
+                     $("#excel_bank_name").val($("#bank_name").val());
+                     $("#excel_collector_name").val($("#collector_name").val());
+                     $("#excel_custom_receipt_no").val($("#custom_receipt_no").val());
+                     $form.submit();
+                 });
+             });
+         
+         });
+         
+         function quickfeepay()
+         {
+             var instiuserid = null;
+             if($("#quickfeepay_name").data("gns_response")) {
+                 var response = $("#quickfeepay_name").data("gns_response");
+                 if(response.instiuserid) {
+                     instiuserid = response.instiuserid;
+                 }
+             }
+         
+             var data = {
+                 "name": $('#quickfeepay_name').val(),
+                 "barcode": $('#quickfeepay_barcode').val(),
+                 "instiuserid": instiuserid
+             };
+         
+             $('#quickfeepay_name').val("");
+             $('#quickfeepay_name').data("gns_response", "");
+             $('#quickfeepay_barcode').val("")
+         
+             $.get("https://myclasscampus.com/feemanager/quickfeepay/redirectlink", data, function( response ) {
+                 if(response.success == true) {
+                     var win = window.open(response.url, '_blank');
+                     if (win) {
+                         //Browser has allowed it to be opened
+                         win.focus();
+                     } else {
+                         //Browser has blocked it
+                         alert('Please allow popups for this website');
+                     }
+                 } else {
+                     toastr.options = {
+                         "positionClass": "toast-top-right",
+                     }
+                     toastr.error( response.msg );
+                 }
+             });
+         }
+      </script>
+      <!-- USED IN Layouts/Partials/ImportStudents -->
+      <!-- END CUSTOM SCRIPTS -->
+      <script>
+         var loader_content = "Processing Request...";
+         
+         function loaderContentChange(content){
+             console.log(content);
+             this.loader_content = content;
+             return true;
+         }
+         
+         $(document).ajaxStart(function () {
+             HoldOn.open({
+                 theme:'sk-bounce',
+                 message: loader_content
+             });
+         });
+         $(document).ajaxComplete(function () {
+             HoldOn.close();
+         });
+         
+         // $("form").submit(function (e) {
+         //     HoldOn.open({
+         //         theme:'sk-bounce',
+         //         message: loader_content
+         //     });
+         //     $.post().done(function (response) {
+         //         HoldOn.close();
+         //     });
+         // });
+         
+         $(document).on('click','.moduleTagClick',function(){
+           var name = $(this).text();
+           var route_url = $(this).attr('href');
+           $.ajax({
+               type: "GET",
+               url: "https://myclasscampus.com/admin/modulewise_log_report",
+               data: {
+                   module_name:name,
+                   route_url:route_url
+               },
+               success: function(){
+         
+               }
+           });
+         });
+         
+         //adding id into help button
+         $(".tooltips").attr('id','help_button');
+         $(function () {
+             $('[data-toggle="tooltip"]').tooltip();
+             $('[data-toggle="tooltip"]').on('shown.bs.tooltip', function () {
+                 $('.tooltips').addClass('animated swing');
+             })
+         });
+         
+         
+         //disable alert message of page to particular user
+         $(document).on('change',"#removeAlert",function(){
+           if (confirm("Are you sure want to disable message for this page?")) {
+               if($("body:has(#alert_modal)")){
+                 $("#alert_modal").modal('hide');
+               }
+               if($("body:has(#sweet_alert)")){
+                 swal.close();
+               }
+               if($("body:has(#toastr)")){
+                 toastr.options.timeOut = 1;
+               }
+         
+             var pageURL = "d/feemanager";
+         
+             $.ajax({
+                 type: "GET",
+                 url: "https://myclasscampus.com/removeAlertForPage",
+                 data: {
+                     url:pageURL
+                 },
+                 success: function(data){
+                   toastr.options = {
+                     "positionClass": "toast-top-right",
+                   }
+                   toastr.info("Message is disabled for this page.");
+                 }
+             });
+           }
+           $("#removeAlert").removeAttr("checked","checked");
+           return false;
+         });
+         
+         
+         $('#action_button').on('click',function(){
+             $.ajax({
+                 global:false,
+                 type: "GET",
+                 url: "https://myclasscampus.com/quickActionContent",
+                 success: function(data){
+                     $('#quick_action_dropdown').append(data);
+                 }
+             });
+         });
+         
+         $(document).ready(function(){
+             var pageURL = "d/feemanager";
+             $.ajax({
+                 global:false,
+                 type: "GET",
+                 url: "https://myclasscampus.com/available_content",
+                 data: {
+                     url:pageURL,
+                 },
+                 success: function(data){
+                     if(data=="YES")
+                     {
+                         $('#help_button').removeAttr('data-original-title');
+                         $('#help_button').attr('data-original-title','Help Content is available now. Click here to expand.');
+         
+                         //show tooltip
+                         $('#help_button').tooltip('show');
+                         setTimeout(function(){ $('#help_button').tooltip('hide'); }, 4000);
+         
+                         //shake button and stop shake when hover
+                         $( "#help_button" ).addClass( "shake" );
+                         $('#help_button').mouseover(function(event) {
+                             $('#help_button').removeClass('shake');
+                         });
+                     }
+                 }
+             });
+         });
+         
+         $('.datepicker').datepicker({
+             format: 'dd-mm-yyyy'
+         });
+         
+         function fnDisplayLoader()
+         {
+             // $('.modalLoader').show();
+         }
+         
+         function fnHideLoader()
+         {
+             // $('.modalLoader').hide();
+         }
+         
+         $('.cls-confirm-delete').click(function(e) {
+             e.preventDefault(); // Prevent the href from redirecting directly
+             var linkURL = $(this).attr("href");
+             fnWarnBeforeDelete(linkURL);
+         });
+         
+         function fnWarnBeforeDelete(linkURL) {
+             swal({
+                 title: "Are you sure want to delete?",
+         
+                 type: "warning",
+                 showCancelButton: true
+             }, function() {
+                 // Redirect the user
+                 $('.modalLoader').show();
+                 window.location.href = linkURL;
+             });
+         }
+         
+         $('.cls-confirm-enable').click(function(e) {
+             e.preventDefault(); // Prevent the href from redirecting directly
+             var linkURL = $(this).attr("href");
+             fnWarnBeforeEnable(linkURL);
+         });
+         
+         function fnWarnBeforeEnable(linkURL) {
+             swal({
+                 title: "Are you sure want to enable?",
+         
+                 type: "warning",
+                 showCancelButton: true
+             }, function() {
+                 // Redirect the user
+                 $('.modalLoader').show();
+                 window.location.href = linkURL;
+             });
+         }
+         
+         $('.cls-confirm-disable').click(function(e) {
+             e.preventDefault(); // Prevent the href from redirecting directly
+             var linkURL = $(this).attr("href");
+             fnWarnBeforeDisable(linkURL);
+         });
+         
+         function fnWarnBeforeDisable(linkURL) {
+             swal({
+                 title: "Are you sure want to disable?",
+         
+                 type: "warning",
+                 showCancelButton: true
+             }, function() {
+                 // Redirect the user
+                 $('.modalLoader').show();
+                 window.location.href = linkURL;
+             });
+         }
+         
+         
+         $(document).on('click', '.confirm-delete', function(e) {
+             e.preventDefault(); // Prevent the href from redirecting directly
+             var linkURL = $(this).attr("href");
+             warnBeforeDelete(linkURL);
+         });
+         
+         function warnBeforeDelete(linkURL) {
+             swal({
+                 title: "Are you sure want to delete?",
+                 text: "Once delete, action can not be undone!!!",
+                 type: "warning",
+                 showCancelButton: true
+             }, function() {
+                 // Redirect the user
+                 window.location.href = linkURL;
+             });
+         }
+         
+         $('.confirm-restore').click(function(e) {
+             e.preventDefault(); // Prevent the href from redirecting directly
+             var linkURL = $(this).attr("href");
+             warnBeforeRestore(linkURL);
+         });
+         
+         function warnBeforeRestore(linkURL) {
+             swal({
+                 title: "Are you sure want to restore?",
+                 text: "",
+                 type: "success",
+                 showCancelButton: true
+             }, function() {
+                 // Redirect the user
+                 window.location.href = linkURL;
+             });
+         }
+         
+         $('.confirm-instichange').click(function(e) {
+             e.preventDefault(); // Prevent the href from redirecting directly
+             var id = $(this).data("id");
+             warnBeforeInstiChange(id);
+         });
+         
+         function warnBeforeInstiChange(id) {
+             swal({
+                 title: "Are you sure want to login to this institute?",
+                 text: "",
+                 type: "warning",
+                 showCancelButton: true
+             }, function() {
+                 // Redirect the user
+                 $.post(
+                     "https://myclasscampus.com/auth/change/institute",
+                     {
+                         id: id,
+                         "_token":"vzlOieITpigdWvPkMXZcBLQLkGMol6PH37xz6ep0"
+                     },
+                     function(response) {
+                         if(response.success == 1)
+                           if(response.is_student_parent == 1){
+                             window.location.replace( "https://myclasscampus.com/d/student_dashboard_v2" );
+                           }else{
+                             window.location.replace( "https://myclasscampus.com" );
+                           }
+                         else
+                             swal('Error',response.message,'error');
+                     }
+                 );
+             });
+         }
+         
+         $(document).on('change', '.confirm-departmentchange', function(e) {
+             e.preventDefault(); // Prevent the href from redirecting directly
+             var id = $(this).val();
+             warnBeforeDepChange(id);
+         });
+         
+         
+         function warnBeforeDepChange(id) {
+             swal({
+                 title: "Are you sure want to change department?",
+                 text: "",
+                 type: "warning",
+                 showCancelButton: true,
+                 showLoaderOnConfirm: true
+                  // closeOnConfirm: false
+             }, 
+             function(confirmation) {
+                 if(!confirmation){
+                     default_selected = $(".confirm-departmentchange [data-default=1]").val();
+                     $(".confirm-departmentchange").val(default_selected);
+                 }else{
+                     $.post(
+                          "https://myclasscampus.com/auth/change/department",  
+                         {
+                             id: id
+                         },
+                         function() {
+                             location.reload();
+                         }
+                     );
+                 }
+             });
+         }
+         
+         $(document).on('change', '.confirm-yearchange', function(e) {
+             e.preventDefault(); // Prevent the href from redirecting directly
+             var id = $(this).val();
+             warnBeforeYearChange(id);
+         });
+         
+         function warnBeforeYearChange(id) {
+             swal({
+                 title: "Are you sure want to change year?",
+                 text: "",
+                 type: "warning",
+                 showCancelButton: true,
+                 showLoaderOnConfirm: true
+             }, function(confirmation) {
+                 // Redirect the user
+                 if(!confirmation){
+                     default_selected = $(".confirm-yearchange [data-default=1]").val();
+                     $(".confirm-yearchange").val(default_selected);
+                 }
+                 else
+                 {
+                     $.post(
+                     "https://myclasscampus.com/auth/change/year",
+                     {
+                         id: id
+                     },
+                     function() {
+                         location.reload();
+                     });
+                 }
+             });
+         }
+                     
+         
+                 
+         
+         $('#modal_global_get_users .mt-multiselect').multiselect({
+             enableFiltering: true,
+             enableCaseInsensitiveFiltering: true,
+             maxHeight: 300,
+             includeSelectAllOption: true,
+             disableIfEmpty: true,
+             buttonWidth:'100%',
+             numberDisplayed: 1,
+         });
+         
+         /**
+          * Enabling Multiselect Dropdown By Adding Class .mt-multiselect
+          */
+         $('.mt-multiselect').multiselect({
+             enableFiltering: true,
+             enableCaseInsensitiveFiltering: true,
+             maxHeight: 300,
+             includeSelectAllOption: true,
+             disableIfEmpty: true,
+             // buttonWidth:'100%',
+             numberDisplayed: 1,
+             nonSelectedText:"None Selected"
+         });
+         
+         /**
+          * Enabling Multiselect List Style By Adding Class .mt-multiselectlist
+          */
+         $('.mt-multiselectlist').multiSelect({
+             selectableHeader: "<input type='text' class='form-control search-input' autocomplete='off' placeholder='Search'>",
+             selectionHeader: "<input type='text' class='form-control search-input' autocomplete='off' placeholder='Search'>",
+             afterInit: function(ms) {
+                 var that = this,
+                 $selectableSearch = that.$selectableUl.prev(),
+                 $selectionSearch = that.$selectionUl.prev(),
+                 selectableSearchString = '#'+that.$container.attr('id')+' .ms-elem-selectable:not(.ms-selected)',
+                 selectionSearchString = '#'+that.$container.attr('id')+' .ms-elem-selection.ms-selected';
+         
+                 that.qs1 = $selectableSearch.quicksearch(selectableSearchString)
+                 .on('keydown', function(e) {
+                     if (e.which === 40) {
+                         that.$selectableUl.focus();
+                         return false;
+                     }
+                 });
+         
+                 that.qs2 = $selectionSearch.quicksearch(selectionSearchString)
+                 .on('keydown', function(e) {
+                     if (e.which == 40){
+                         that.$selectionUl.focus();
+                         return false;
+                     }
+                 });
+             },
+             afterSelect: function(){
+                 this.qs1.cache();
+                 this.qs2.cache();
+             },
+             afterDeselect: function(){
+                 this.qs1.cache();
+                 this.qs2.cache();
+             }
+         });
+         
+         $(function() {
+             /**
+              * Menubar grid button
+              */
+             $(document).on("click", "#gridBtn", function( e ) {
+                 $('#gridBox').slideToggle('fast');
+             });
+             $('body').click(function( e ) {
+                 $('#gridBox').hide();
+             });
+         
+             /**
+              * Central help mechanism
+              */
+             $(document).on("click", ".btn.btn-outline.red", function() {
+                 if($(this).children(".fa.fa-question").length > 0) {
+                     $(".help-loader").show();
+                     $(".help-content").html("");
+                     $('body').toggleClass('page-quick-sidebar-open');
+                     $.get(
+                         "https://myclasscampus.com/gethelpcontent",
+                         {
+                             route: "d/feemanager"
+                         },
+                         function( response ) {
+                             $(".help-loader").hide();
+                             $(".help-content").html( response );
+                         }
+                     );
+                 }
+             });
+         
+         
+             // Handles quick sidebar toggler
+             $('.dropdown-quick-sidebar-toggler a, .page-quick-sidebar-toggler, .quick-sidebar-toggler').click(function (e) {
+                 $('body').toggleClass('page-quick-sidebar-open');
+             });
+         
+             $.fn.dataTable.ext.errMode = 'none';
+         
+         });
+         
+         //toastr for alert of new updates
+         toastr.options = {
+           "closeButton": true,
+           "debug": false,
+           "positionClass": "toast-bottom-left",
+           "onclick": null,
+           "showDuration": "5000",
+           "hideDuration": "1000",
+           "timeOut": "5000",
+           "extendedTimeOut": "5000",
+           "showEasing": "linear",
+           "hideEasing": "linear",
+           "showMethod": "slideDown",
+           "hideMethod": "slideUp"
+         }
+         
+         //on page load alert will be show if route is added in admin panel
+         $(document).ready(function(){
+             $(".alert-content").html("");
+             $.ajax({
+                 global:false,
+                 type: "GET",
+                 url: "https://myclasscampus.com/getalertcontent",
+                 data: {
+                     route: "d/feemanager"
+                 },
+                 success: function(response){
+                     if(response['type'] != '' && response['html'] != '')
+                     {
+                         if(response['type'] == 'Pop Up')
+                         {
+                             $(".alert-content").html(response['html']);
+                             $("#alert_modal").modal('show');
+                         }
+                         if(response['type'] == 'Toastr')
+                         {
+                             if(response['toastr_type'] == "Success")
+                             {
+                                 toastr.success(response['html'],"Message");
+                             }
+                             if(response['toastr_type'] == "Warning")
+                             {
+                                 toastr.warning(response['html'],"Message");
+                             }
+                             if(response['toastr_type'] == "Error")
+                             {
+                                 toastr.error(response['html'],"Message");
+                             }
+                             if(response['toastr_type'] == "Info")
+                             {
+                                 toastr.info(response['html'],"Message");
+                             }
+                         }
+                         if(response['type'] == 'Sweet Alert')
+                         {
+                             swal({
+                                 title: "Message",
+                                 text: response['html'],
+                                 html:true,
+                                 confirmButtonText: 'OK,Got it.',
+                                 type: "info",
+                             });
+                         }
+                     }
+                 }
+             });
+         });
+         $(document).ready(function () {
+         
+           // DISPLAY ACTIVE SIDEBAR MENU
+             var url = window.location;
+             $('ul li a[href="' + url + '"]').parent().addClass('active');
+             $('ul li a').filter(function () {
+                 return this.href == url;
+             }).parent().addClass('active').parent().parent().addClass('active');
+         });
+         
+         // reset filters
+         $(document).on('change','.global_search_method',function(){
+             $('#global_department').multiSelect("clearSelection");
+             $("#global_department").multiSelect( 'refresh' );
+             $(".div_global_class_subjects").hide();
+             $(".div_global_classroom").hide();
+             $(".div_global_standards").hide();
+             $(".div_global_std_sub").hide();
+             $("#modal_global_get_users .modal-footer").find(".btn_global_import_users_final").remove();
+             if($(this).val() == '2')
+                 $(".standard_search_note").show();
+             else
+                 $(".standard_search_note").hide();
+         });
+         
+         // Get all roles
+         $(document).on("click",'.btn_global_get_users',function(){
+             $("#modal_global_get_users").addClass('modal');
+             $('#global_department').multiSelect("clearSelection");
+             $("#global_department").multiSelect( 'refresh' );
+             $(".div_global_class_subjects").hide();
+             $(".div_global_classroom").hide();
+             $(".div_global_standards").hide();
+             $(".div_global_std_sub").hide();
+             $("#global_users_list").html('');
+             var searchBoxClass = $('#modal_global_get_users .tools a').attr('class');
+             if(searchBoxClass == 'expand')
+                 $('#modal_global_get_users .tools a').trigger('click');
+             if($("input.global_search_method:checked").val() == '2')
+                 $(".standard_search_note").show();
+             else
+                 $(".standard_search_note").hide();
+         
+             fnDisplayLoader();
+             $.ajax({
+                   type: "GET",
+                   url: "https://myclasscampus.com/global-get-all-roles",
+                   dataType:"html",
+                   data: {
+                       roles: $(this).data("roles")
+                   },
+                   success: function(data){
+                         fnHideLoader()
+                         $(".global_role_id").html(data);
+                         $('.global_role_id').multiselect('rebuild');
+                   }
+             });
+             $('#modal_global_get_users').modal('show');
+         });
+         
+         // Get standards OR classrooms for selected departments by selected search methods
+         $(document).on("change",'#global_department',function(){
+             var departmentIds = $(this).val();
+             var searchMethod = $("input:radio.global_search_method:checked").val();
+             var linkURL = '';
+         
+             $(".div_global_class_subjects").hide();
+             $(".div_global_classroom").hide();
+             $(".div_global_standards").hide();
+             $(".div_global_std_sub").hide();
+         
+             if(searchMethod == 1) // search by classrooms methods
+                 linkURL = "https://myclasscampus.com/global-get-dept-classrooms";
+             else
+                 linkURL = "https://myclasscampus.com/global-get-dept-standards";
+             fnDisplayLoader();
+             $.ajax({
+                   type: "post",
+                   url: linkURL,
+                   data: {department_ids : departmentIds, "_token" : "vzlOieITpigdWvPkMXZcBLQLkGMol6PH37xz6ep0", searchMethod :searchMethod },
+                   success: function(data){
+                         fnHideLoader();
+                         if(searchMethod == '2'){
+                             if(data.standards){
+                                 $(".div_global_standards").fadeIn("slow");
+                                 $("#global_standards").html(data.standards);
+                                 $('#global_standards').multiselect('rebuild');
+                             }else{
+                                 $(".div_global_standards").hide();
+                             }
+                         }else{
+                             if(data.classrooms){
+                                 $(".div_global_classroom").fadeIn("slow");
+                                 $("#global_classrooms").html(data.classrooms);
+                                 $('#global_classrooms').multiselect('rebuild');
+                             }else{
+                                 $(".div_global_classroom").hide();
+                             }
+                         }
+                   }
+             });
+         });
+         
+         // Get subjects and classrooms for selected standards
+         $(document).on("change",'#global_standards',function(){
+             var departmentIds = $("#global_department").val();
+             var standardIds = $(this).val();
+             $(".div_global_class_subjects").hide();
+             $(".div_global_classroom").hide();
+             fnDisplayLoader();
+             $.ajax({
+                   type: "post",
+                   url: "https://myclasscampus.com/global-get-standard-classrooms-subjects",
+                   data: {
+                         department_ids : departmentIds,
+                         standard_ids : standardIds,
+                         "_token" : "vzlOieITpigdWvPkMXZcBLQLkGMol6PH37xz6ep0"
+                     },
+                   success: function(data){
+                         fnHideLoader();
+                         if(data.classrooms){
+                             $(".div_global_classroom").fadeIn("slow");
+                             $("#global_classrooms").html(data.classrooms);
+                             $('#global_classrooms').multiselect('rebuild');
+                         }else{
+                             $(".div_global_classroom").hide();
+                         }
+                         if(data.subjects){
+                             $(".div_global_std_sub").fadeIn("slow");
+                             $("#global_std_subjects").html(data.subjects);
+                             $('#global_std_subjects').multiselect('rebuild');
+                         }else{
+                             $(".div_global_std_sub").hide();
+                         }
+                   }
+             });
+         });
+         
+         // Get subjects for selected classrooms
+         $(document).on("change",'#global_classrooms',function(){
+             var classroomIds = $(this).val();
+             var searchMethod = $("input:radio.global_search_method:checked").val();
+             if(searchMethod == "1")
+             {
+                 fnDisplayLoader();
+                 $.ajax({
+                       type: "post",
+                       url: "https://myclasscampus.com/global-get-classroom-subjects",
+                       data: {
+                             classroom_ids : classroomIds,
+                             "_token" : "vzlOieITpigdWvPkMXZcBLQLkGMol6PH37xz6ep0"
+                         },
+                       success: function(data){
+                             fnHideLoader();
+                             if(data.subjects){
+                                 $(".div_global_class_subjects").fadeIn('slow');
+                                 $("#global_class_subjects").html(data.subjects);
+                                 $('#global_class_subjects').multiselect('rebuild');
+                             }else{
+                                 $(".div_global_class_subjects").hide();
+                             }
+                       }
+                 });
+             }
+         });
+         
+         $(document).on("click","#btn_global_search_employees",function(){
+             var selectedRoles = [];
+             var selectedDepts = [];
+             var selectedClass = [];
+             var selectedClassSub = [];
+             var selectedStd = [];
+             var selectedStdSub = [];
+             var selectedStdClass = [];
+             var exceptInstiUserIds = $(".btn_global_get_users").data('except_insti_user_ids');
+         
+             selectedRoles   = $("#global_role_id1").val();
+             if(!selectedRoles){
+                $("#global_role_id1").parents('.form-group').find(".error").html('User roles can not be empty!');
+                 return;
+             }
+             selectedDepts = $("#global_department").val();
+             selectedClass= $("#global_classrooms").val();
+         
+             var searchMethod = $("input:radio.global_search_method:checked").val();
+             if(searchMethod == "1") // search by dept, classroom and subject wise methods
+             {
+                 selectedClassSub = $("#global_class_subjects").val();
+             }else{ // search by dept, standards and classroom, subjects2
+                 selectedStd    = $("#global_standards").val();
+                 selectedStdSub  = $("#global_std_subjects").val();
+             }
+             $("#modal_global_get_users .modal-footer").find(".btn_global_import_users_final").remove();
+             $(".global_role_id").parents('.form-group').find(".error").html('');
+             fnDisplayLoader();
+             $.ajax({
+                   type: "post",
+                   url: "https://myclasscampus.com/global-search-users",
+                   data: {
+                         selectedRoles : selectedRoles,
+                         selectedDepts : selectedDepts,
+                         selectedClass : selectedClass,
+                         selectedClassSub : selectedClassSub,
+                         selectedStd : selectedStd,
+                         selectedStdSub : selectedStdSub,
+                         selectedStdClass : selectedStdClass,
+                         exceptInstiUserIds : exceptInstiUserIds,
+                         searchMethod : searchMethod,
+                         searchType : "dept-class-wise",
+                         "_token" : "vzlOieITpigdWvPkMXZcBLQLkGMol6PH37xz6ep0"
+                     },
+                   success: function(data){
+                         fnHideLoader();
+                         if(data.success){
+                             $('#modal_global_get_users .collapse').trigger('click');
+                             $("#modal_global_get_users #global_users_list").html(data.data);
+                             $("#modal_global_get_users").find(".modal-footer").append('<button type="submit" class="btn btn-primary btn_global_import_users_final">Import</button>');
+                         }else{
+                             $("#global_users_list").html('<center><div class="alert alert-success">Search results empty!</div></center>');
+                         }
+                   }
+             });
+         });
+         
+         // Direct search with search input
+         $(document).on("click","#btn_global_search_employees1",function(){
+             var selectedRoles = [];
+             var selectedDepts = [];
+             var selectedClass = [];
+             var selectedClassSub = [];
+             var selectedStd = [];
+             var selectedStdSub = [];
+             var selectedStdClass = [];
+             var searchInputs = '';
+             var searchMethod = $("input:radio.global_search_method:checked").val();
+             var exceptInstiUserIds = $(".btn_global_get_users").data('except_insti_user_ids');
+         
+             $("#modal_global_get_users .modal-footer").find(".btn_global_import_users_final").remove();
+             $("#modal_global_get_users").find(".error").html('');
+         
+             selectedRoles   = $("#global_role_id2").val();
+             if(!selectedRoles){
+                $("#global_role_id2").parents('.form-group').find(".error").html('User roles can not be empty!');
+                 return;
+             }
+         
+             var searchNameInputs   = $("#global_searchby_name").val();
+             var searchMobileInputs   = $("#global_searchby_mobile").val();
+             var searchGrInputs   = $("#global_searchby_gr_no").val();
+             if(!searchNameInputs && !searchMobileInputs && !searchGrInputs){
+                $("#global_searchby_name").parents('.form-group').find(".error").html('Name or mobile or GR No. can not be empty!');
+                 return;
+             }
+             fnDisplayLoader();
+         
+             $.ajax({
+                   type: "post",
+                   url: "https://myclasscampus.com/global-search-users",
+                   data: {
+                         selectedRoles : selectedRoles,
+                         selectedDepts : selectedDepts,
+                         selectedClass : selectedClass,
+                         selectedClassSub : selectedClassSub,
+                         selectedStd : selectedStd,
+                         selectedStdSub : selectedStdSub,
+                         selectedStdClass : selectedStdClass,
+                         searchMethod : searchMethod,
+                         searchType : "direct-search",
+                         searchNameInputs : searchNameInputs,
+                         searchMobileInputs : searchMobileInputs,
+                         searchGrInputs : searchGrInputs,
+                         exceptInstiUserIds : exceptInstiUserIds,
+                         "_token" : "vzlOieITpigdWvPkMXZcBLQLkGMol6PH37xz6ep0"
+                     },
+                   success: function(data){
+                         fnHideLoader();
+                         if(data.success){
+                             $('#modal_global_get_users .collapse').trigger('click');
+                             $("#modal_global_get_users #global_users_list").html(data.data);
+                             $("#modal_global_get_users").find(".modal-footer").append('<button type="submit" class="btn btn-primary btn_global_import_users_final">Import</button>');
+                         }else{
+                             $("#global_users_list").html('<center><div class="alert alert-success">Search results empty!</div></center>');
+                         }
+                   }
+             });
+         });
+         
+         $(document).on('click','.global_insti_user_ids',function(){
+             var hiddenInstiUserIds = $("#global_hidden_insti_user_ids").val().split(',');
+             if(this.checked)
+             {
+                 hiddenInstiUserIds.push($(this).val());
+             }else{
+                 myThis = $(this).val();
+                 hiddenInstiUserIds = jQuery.grep(hiddenInstiUserIds, function(value) {
+                   return value != myThis;
+                 });
+             }
+             var uniqueInstiUsreIds = [];
+             $.each(hiddenInstiUserIds, function(i, e) {
+                 if ($.inArray(e, uniqueInstiUsreIds) == -1) uniqueInstiUsreIds.push(e);
+             });
+         
+             uniqueInstiUsreIds = uniqueInstiUsreIds.join(',');
+             var edited = uniqueInstiUsreIds.replace(/^,|,$/g,'');
+         
+             $("#global_hidden_insti_user_ids").val(edited);
+         });
+         
+         
+         /**
+          * START: Global name search
+          */
+         var gns_request = null;
+         var gns_selected_name = null;
+         
+         $.each($("input.global_name_search"), function(i) {
+             $(this).addClass("gns_" + i);
+             $(this).data("gnsid", i);
+             $(this).prop("autocomplete", "off");
+             $(this).after("<i class='fa fa-search gns-icon' style='display:inline-block;position:absolute;margin-left:-25px;margin-top:10px;color:#777;'></i>");
+             $(this).prop("placeholder", $(this).prop("placeholder") + " & Press Enter To Search");
+         });
+         
+         $("input.global_name_search").on("keyup", function(e) {
+             e.stopPropagation();
+         
+             if(e.which != 13) {
+                 return false;
+             }
+         
+             if(gns_selected_name == $(this).val()) {
+                 gns_selected_name = null;
+                 return false;
+             }
+         
+             var value = $(this).val();
+         
+             // trim value for whitespace
+             value = $.trim(value);
+         
+             if(value == "") {
+                 $("#gns_viewer").remove();
+             } else {
+                 var src = $(this);
+                 var unique_id = $(this).data("gnsid");
+                 gns_selected_name = null;
+         
+                 if(value == $(this).data("lastvalue") && $("#gns_viewer").length == 1) {
+                     return false;
+                 }
+         
+                 var lastvalue = $(this).data("lastvalue", value);
+         
+                 // Prepare data
+                 data = {};
+                 data['name'] = value;
+         
+                 if(src.data('institute_id')) {
+                     data['institute_id'] = src.data('institute_id');
+                 }
+                 if(src.data('department_id')) {
+                     data['department_id'] = src.data('department_id');
+                 }
+                 if(src.data('year_id')) {
+                     data['year_id'] = src.data('year_id');
+                 }
+                 if(src.data('standard_id')) {
+                     data['standard_id'] = src.data('standard_id');
+                 }
+                 if(src.data('classroom_id')) {
+                     data['classroom_id'] = src.data('classroom_id');
+                 }
+         
+                 if(gns_request != null) {
+                     gns_request.abort();
+                 }
+         
+                 gns_request = $.get("https://myclasscampus.com/gns/results",
+                     data,
+                     function( response ) {
+                         $("#gns_viewer").remove();
+         
+                         if(response.length > 0) {
+                             var html = "<div id='gns_viewer' data-id='"+ unique_id +"' style='display:inline;margin-top:35px;position:absolute;background-color:#EEE;z-index:9999;box-shadow: 2px 2px 10px -1px #AAA;border-radius: 7px;overflow: auto;max-height:350px;'><table class='table table-bordered table-striped table-condensed' style='margin-bottom:0;max-height:inherit'><thead>";
+         
+                             html += `<tr>
+                                     <th>#</th>
+                                     <th>Name</th>
+                                     <th>Gr No.</th>
+                                     <th>Department</th>
+                                     <th>Standard</th>
+                                     <th>Classrooms</th>
+                                 </tr>`;
+         
+                             html += "</thead><tbody>";
+         
+                             $.each(response, function(i, v) {
+                                 html += `<tr class='gns_name_select' data-name='`+ v.name +`' data-gns_response='`+ JSON.stringify(v) +`' style='cursor:pointer'>
+                                         <td>`+ (i+1) +`</td>
+                                         <td>`+ v.name +`</td>
+                                         <td>`+ v.grno +`</td>
+                                         <td>`+ v.department +`</td>
+                                         <td>`+ v.standard +`</td>
+                                         <td>`+ v.classrooms +`</td>
+                                     </tr>`;
+                             });
+         
+                             html += "</tbody></table></div>";
+         
+                             src.after(html);
+                             $("#gns_viewer").css("margin-left", "-" + $("#gns_viewer").css("width"));
+         
+                             $("#gns_viewer tbody tr:first-child").addClass("active");
+                             src.val($("#gns_viewer tr.active").data("name"));
+                         }
+                     }
+                 );
+             }
+         });
+         
+         $(document).on("keydown", function(e) {
+             var code = (e.keyCode ? e.keyCode : e.which);
+             if($("#gns_viewer").length == 1) {
+                 if(code == 40) {
+                     // down
+                     var current_row = $("#gns_viewer tbody tr.active");
+                     if(!$("#gns_viewer tbody tr:last-child").hasClass("active")) {
+                         current_row.next().addClass("active");
+                         current_row.removeClass("active");
+         
+                         var target = $("input.gns_" + $("#gns_viewer").data("id"));
+                         var new_val = $("#gns_viewer tbody tr.active").data("name");
+                         target.val( new_val );
+                     }
+                 } else if(code == 38) {
+                     // up
+                     var current_row = $("#gns_viewer tbody tr.active");
+                     if(!$("#gns_viewer tbody tr:first-child").hasClass("active")) {
+                         current_row.prev().addClass("active");
+                         current_row.removeClass("active");
+         
+                         var target = $("input.gns_" + $("#gns_viewer").data("id"));
+                         var new_val = $("#gns_viewer tbody tr.active").data("name");
+                         target.val( new_val );
+                     }
+                 } else if(code == 13) {
+                     var target = $("input.gns_" + $("#gns_viewer").data("id"));
+                     var new_val = $("#gns_viewer tbody tr.active").data("name");
+         
+                     if(target.val() == new_val) {
+                         target.data('gns_response', $("#gns_viewer .gns_name_select.active").data('gns_response'));
+                         gns_selected_name = new_val;
+         
+                         if(target.data("callback")) {
+                             var callback = target.data("callback");
+                             window[callback]();
+                         }
+         
+                         $("#gns_viewer").remove();
+                     }
+                 }
+             }
+         });
+         
+         $(document).on("click", ".gns_name_select", function() {
+             var target = $("input.gns_" + $("#gns_viewer").data("id"));
+             target.val( $(this).data('name') );
+             target.data('gns_response', $(this).data('gns_response'));
+         
+             if(target.data("callback")) {
+                 var callback = target.data("callback");
+                 window[callback]();
+             }
+         
+             $("#gns_viewer").remove();
+         });
+         
+         $(document).mouseup(function (e) {
+             var $menu = $('#gns_viewer');
+         
+             if (!$menu.is(e.target) // if the target of the click isn't the container...
+                 && $menu.has(e.target).length === 0) // ... nor a descendant of the container
+             {
+                 $("#gns_viewer").remove();
+             }
+         });
+         /**
+          * END: Global name search
+          */
+         
+          /*  $("form").submit(function() {
+             if($(this).hasClass("allowSubmit") == false)
+             {
+             $(this).submit(function() {
+                 return false;
+             });
+             }
+             return true;
+         }); */
+      </script>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async="" src="./Feemanager Dashboard_files/js"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         
+         gtag('config', 'UA-141720413-1');
+      </script>
+   </body>
+</html>
